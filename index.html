@@ -17,10 +17,7 @@ h2 {
   color: black;
   text-align: left;
 }
-p {
-  font-family: Garamond;
-  font-size: 20px;
-}
+
 .header {
   background-color: #f1f1f1;
   padding: 20px;
@@ -52,11 +49,8 @@ p {
             <li>Nonzero power radiated predicted by the Larmor formula, yet zero radiation reaction</li>
             <li>Equivalence principle paradox (falling charge radiation paradox)</li>
         </ul>
-        For an introduction and overview to this area, I recommend reading: <a href="https://www.sciencedirect.com/science/article/pii/0003491660901056?via%3Dihub">Fulton & Rohrlich 1961</a>, <a href="https://www.sciencedirect.com/science/article/pii/0003491680903607">Boulware 1980</a>, and <a href="https://arxiv.org/abs/gr-qc/9903052">Pauri & Vallisneri 1999</a>. 
-        <br> For an overview and somewhat of a resolution to the first point, Ginzburg in his textbook gives a clear argument for how to reconcile the two. <br> There is a similar argument made in Fulton & Rohrlich which is in some sense the standard. 
-        <br> To become aquainted with the equivalence principle paradox, the papers by Pauri & Vallisneri (1990), Ginzburg (1970), and Fulling & Wilson are great sources. They go through the paradox of the 4 cases of falling & supported charges and observers. 
-        <br> For work on the scalar case, Ren & Weinberg is perhaps the best source. Others including Fulling & Wilson (in 2d spacetime), and Higuchi & Matsas, and Kialka et. al. (for Klein Gordon fields) have also written on the scalar case.
-        <br> Some of my own notes are included below. 
+        For a proper introduction, I recommend reading: <a href="https://www.sciencedirect.com/science/article/pii/0003491660901056?via%3Dihub">Fulton & Rohrlich 1961</a>, <a href="https://www.sciencedirect.com/science/article/pii/0003491680903607">Boulware 1980</a>, and <a href="https://arxiv.org/abs/gr-qc/9903052">Pauri & Vallisneri 1999</a>. 
+        <br> 
       </p>
     <ul>
       <li>Ginzburg Summary: <a href="https://timgbates.github.io/document/Ginzburgchapter3.pdf">HERE</a> </li>
@@ -67,13 +61,34 @@ p {
       <p>Below is also a <a href="https://timgbates.github.io/document/TXLAradiationposter.pdf">poster</a> that I presented at the 2022 TXLA Undergraduate Math Research conference at the University of Houston</p>
       <li><embed src="https://timgbates.github.io/document/TXLAradiationposter.pdf" type="application/pdf" /></li>
   <h2>Topology</h2>
-  <p>One of my favorite branches of math is topology. I am primarily interested in topological data analysis and low dimensional topology. 
+  <p>In topology, I am primarily interested in topological data analysis and low dimensional topology, in particular knots. 
   <h3>Textbook Solutions</h3>
   Here I have some (unrevised) sets of solutions to various textbooks which I am working through. 
   <ol>
     <li>Elements of Topology by Singh <a href="https://timgbates.github.io/document/singhsol.pdf">solutions</a> </li>
   </ol>
-  <h3>Topological Data Analysis</h3>
+  <h3>Low Dimensional Topology and Knots</h3>
+  <p>
+    Studying and classifying manifolds of dimension 3 and 4 has been a challenge that has puzzled topologists for several generations. <br>
+    Dimensions 1 and 2 are relatively simple and have lent themselves to classification theorems, while dimensions >4 are also workable thanks to the help of surgery theory. <br>
+    Dimensions 3 and 4 however, seem to be just complicated enough to become a difficult problem, but also not large enough to give enough space to use surjery. <br>
+  </p>
+
+  <p>
+    Knots are nice embeddings of the circle in a 3-sphere. Generally, there are two reasons as to why mathematicians study knots. <br>
+    First, they are efficient tools for creating and studying 3 and 4 manifolds. Since we consider knots in a 3-sphere, the compliment of a regular neighborhood of a knot or link is a 3-manifold, which may have some interesting topology. <br>
+    Slice knots, and concordance groups of knots give useful ways to study 4-manifolds. One can use the existence of slice knots which are topologically slice but not smoothly slice to prove the existence of exotic smooth structures of R4. <br>
+
+    Secondly, knots are interesting in and of themselves. The fundamental problem of knots theory is the following: given two knots, can we distinguish them up to ambient isotopy (being able to tangle or untangle the knot without crossing itself) <br>
+    Unsurprisingly, this problem is incredibly difficult. Knot theorists have developed myriads of invariants used to distinguish knots, and up to a certain degree there is a classification.  <br>
+    The study of knots has also been applied to the study of DNA/RNA and molecular structures arising in biology and chemistry. Some invariants of knots have famously been dubbed ``quantum invariants'' due to their utility in certain areas of theoretical physics. <br>
+
+  </p>
+  <p>
+    My personal interest in knots falls into both branches. I am interesting in the various concordance groups, which are nice from both points of view as 1) they are incredibly important in 4-manifold topology, <br>
+    2) knots under the connect sum operation famously form a monoid, and does not admit a group structure, but by passing to the concordance equivalence relation, knots under direct sum now form a group, which can be studied, and attempts to study this is still open and a very exciting area of research. 
+  </p>
+    <h3>Topological Data Analysis</h3>
   Topological data analysis is the use of tools from topology (homology, Morse theory, cohomology, etc) to study and understand geometric features of data. 
   <br> This <a href="https://arxiv.org/pdf/1710.04019.pdf">article</a> posted on ArXiv is a great introduction to the field from a data science perspective by Frederic Chazal and Bertrand Michel. 
   <br> There are some great resources for learning about TDA. <a href="https://www.emis.de/journals/SLC/wpapers/s48forman.pdf">A User's guide to discrete Morse theory</a> by Robin Forman on computational Morse theory. </p>
