@@ -33,15 +33,15 @@ If you're lucky enough to stumble onto this page, have fun. Here are some useles
 <h2>Fibonacci Functor</h2>
 
 Let us consider the category where the objects are natural numbers and the morphisms is the usual partial ordering on $\mathbb{N}$ (so there exists an arrow $a \rightarrow b$ if $a \leq b$). Consider the map $F: \mathbb{N} \rightarrow \mathbb{N}$ defined by $n \mapsto f_n$, the nth Fibonacci number. 
-One can readily check that $F$ is a functor from this category to itself. 
+One can readily check that $F$ is a functor from this category to itself. Let's take a look at the first few examples:
 
 <h2>Fibonachi Semi-Group</h2>
 Let $\mathbb{N}_0$ denote the non-negative integers. Let $f(k)$ map $k$ to a sequence $F_k$ which starts with $0$, and then is followed by $k$, and then continues recursively where $a_n = a_{n-1} + a_{n-2}$. Notice that if $k = 1$, we have the usual Fibonacci sequence. 
-\begin{array}{rrrrrr}
-0 & 0 & 0 & 0 & 0 & 0\\
-0 & 1 & 1 & 2 & 3 & 5\\
-0 & 2 & 2 & 4 & 6 & 10\\
-0 & 3 & 3 & 6 & 9 & 15 
+\begin{array}{rrrrrrr}
+0 & 0 & 0 & 0 & 0 & 0 & 0\\
+0 & 1 & 1 & 2 & 3 & 5 & 8\\
+0 & 2 & 2 & 4 & 6 & 10 & 16\\
+0 & 3 & 3 & 6 & 9 & 15 & 24 
 \end{array}
 One notices that if I add $F_1$ to $F_2$ termwise, then I obtain $F_3$. Indeed if I consider the set of all $F_k$ for all $k \in \mathbb{N}_0$ I obtain a monoid under this addition of sequences. One readily notices that this monoid is isomorphic to $(\mathbb{N}_0, +)$.
 </body>
