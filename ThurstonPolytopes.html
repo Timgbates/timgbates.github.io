@@ -20,19 +20,67 @@
     Here I want to document my experience and process using Snappy to compute Alexander polytopes and Thurston Polytopes. 
 </p>
 <p>
-    Let $\Delta_L$ denote the Alexander polynomial for a link $L$. 
+    Let $\Delta_L$ denote the Alexander polynomial for a link $L$. In order to compute the Polytopes we will need the following libraries and packages. 
 </p>
 <div class="container">
     <div class="box">
         <pre>
             <code class="python">
-                for i in range(10):
-                    print("thing")
+                import snappy                
+            
+                from sage.geometry.newton_polygon import NewtonPolygon
+                from sage.geometry.polyhedron.plot import Projection
+                
             </code>
         </pre>
     </div>
 
 </div>
+Now the following functions will compute the Alexander polytopes. 
+<div class="container">
+    <div class="box">
+        <pre>
+            <code class="python">
+                def Alex_Polytope_Unnormalized(L):
+                    L_alex = L.alexander_polynomial()
+                    if type(L_alex) == int:
+                        return "Constant"
+                    return Polyhedron(vertices = L_alex.exponents())
+            
+            
+                def Alex_Polytope_True(L):
+                    q = Alex_Polytope_Unnormalized(L)
+                    if q == "Constant":
+                        return "Constant"
+                    q.center()
+                    qnew = q - q.center()
+                    qnewp = qnew.polar()
+                    return (1/2)*qnewp
+                
+                def Alex_Polytope_True_Plot(L):
+                    return Alex_Polytope_True(L).plot(frame=False, alpha=.6)
+            </code>
+        </pre>
+    </div>
+
+</div>
+We can also compute the slopes for our Alexander polytopes. 
+<div class="container">
+    <div class="box">
+        <pre>
+            <code class="python">
+                def Slope(L):
+                    P = Alex_Polytope_True(L)
+                    if P == "Constant":
+                        return "constant"
+                    if len(list(P.faces(4))) != 0:
+                        return 
+                    v = len(list(P.faces(0)))
+                    f = len(list(P.faces(2)))
+                    return (f-4)/(v-4)
+            </code>
+        </pre>
+    </div>
 
 </body>
 </html>
