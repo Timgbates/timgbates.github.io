@@ -7,8 +7,43 @@
     
   <style>
 
-body {font-family: baskerville, serf; 
-    background: url(https://timgbates.github.io/document/ribbon.jpg), opacity: 0.3, repeat 0 0;
+
+body {
+        background-color:rgb(205, 2000, 10000);
+      }
+
+      .sidenav {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #68267c;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  margin-left: 160px; /* Same as the width of the sidenav */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
 }
 h1 {
   color: rgb(0, 0, 0);
@@ -21,9 +56,14 @@ h2 {
 </style>
 
 <h1> Tim Bates </h1>
-<h2>Email: tgb50@scarletmail.rutgers.edu</h2>
+<h3>Email: tgb50@scarletmail.rutgers.edu</h3>
 </head>
 <body style="background-color:rgb(205, 2000, 10000);">
+  <div class="sidenav">
+    <a href="https://timgbates.github.io/topology.html">Topology</a>
+    <a href="https://timgbates.github.io/random.html">Useless Facts</a>
+  </div>
+  <div class="main">
   <div class="header">
   </div>
     <h2 text-align: center;> About Me </h2>
@@ -52,5 +92,6 @@ h2 {
         <li>Topological Phase transitions in functional Brain Networks by Santos et. al. </li>
         <li>Classical Roots of the Unruh and Hawking Effects by Pauri and Vallisneri</li>
       </ul>
+    </div>
 </body>
 </html>
