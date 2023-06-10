@@ -30,7 +30,25 @@ body {
 .sidenav a:hover {
   color: #f1f1f1;
 }
+.header {
+  padding: 10px 16px;
+  background: #555;
+  color: #f1f1f1;
+}
 
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
 .main {
   margin-left: 160px; /* Same as the width of the sidenav */
   font-size: 28px; /* Increased text to enable scrolling */
@@ -39,6 +57,7 @@ body {
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
+
 }
     </style>
 <body>
@@ -48,7 +67,11 @@ body {
     <a href="https://timgbates.github.io/random.html">Useless Facts</a>
   </div>
   <div class="main">
-Uniform Acceleration. 
+
+    <div class="header" id="myHeader">
+      <h2>Uniform Acceleration</h2>
+    </div>
+
 
 <p>
 The controversies with the nature of uniform acceleration radiation go back as far as Max Born in 1909. Radiation of a uniformly accelerated has since presented persistent problems in the physics literature. Some of the puzzles which have led to this question becoming pervasive include: 
