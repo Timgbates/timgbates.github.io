@@ -95,12 +95,27 @@ h2 {
   padding: 40px;
 }
 </style>
+<script>
+  function parallax_height() {
+  var scroll_top = $(this).scrollTop();
+  var sample_section_top = $(".sample-section").offset().top;
+  var header_height = $(".sample-header-section").outerHeight();
+  $(".sample-section").css({ "margin-top": header_height });
+  $(".sample-header").css({ height: header_height - scroll_top });
+}
+parallax_height();
+$(window).scroll(function() {
+  parallax_height();
+});
+$(window).resize(function() {
+  parallax_height();
+});
+</script>
 
-<h1> Tim Bates </h1>
 <div class="sample-header">
   <div class="sample-header-section">
-    <h1>Scroll down to see the parallax effect</h1>
-    <h2>Background landcape scrolls with its own depth </h2>
+    <h1>Tim Bates</h1>
+    <h2> </h2>
   </div>
 </div>
 </head>
