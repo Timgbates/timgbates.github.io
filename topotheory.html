@@ -182,6 +182,18 @@ thus given $v, w \in T_p \mathcal{H}$,
 $$
 g(v, w) = v^T \begin{pmatrix} 1 & 0 & 0 \\ 0 & (1+x^2) & -x \\ 0 & - x & 1 \end{pmatrix} w
 $$
+
+<p>
+  Why is this geometry called Nil? The reason is because the model space, namely the Heisenberg group, is a nilpotent group. 
+  
+  A group $G$ is said to be nilpotent if the following sequence $[G,G], [G, [G,G]], [G,[G,[G,G]]], \dots$ terminates with $\left< e \right>$. 
+  An equivalent formulation of nilpotency is that the following ascending central series $C_0(G) = e$, $C_1(G) = Z(G)$, $C_2(G) = p^{-1}(Z(G/Z(G)))$, $\dots$, terminates at $C_n(G) = G$. 
+We can see that the center of the Heisenberg group consists of elements:
+$$
+Z(\mathcal{H}) = \left\{ \begin{pmatrix} 1 & 0 & z \\ 0 & 1 & 0 \\ 0 & 0 & 1\end{pmatrix} | z \in \mathbb{R} \right\}
+$$
+Clearly $\mathcal{H}/ Z(\mathcal{H}) = \mathbb{R}^2$ which is abelian, and thus $Z(\mathcal{H}/Z(\mathcal{H})) = \mathcal{H}/Z(\mathcal{H})$, the preimage of which is the entire Heisenberg group.  
+</p>
 </div>
   </div>
 
