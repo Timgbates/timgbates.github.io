@@ -148,7 +148,14 @@ $$
 $$
 which wrtten in a slightly different notation is $(a, b, c)*(x, y, z) = (a+x, b+y, c+z + ay)$. Thus it appears that this composition is almost a translation, except this additional term in the z-coordiante. 
 
-
+<p>
+Let's take a step back and think. Given two points on a manifold, since I care about it up to topological or smooth deformations, I can stretch the two points out to appear seemingly far apart, or I could squeeze the space between them, making them appear close togeether. 
+There is no well defined notion of distance between points in a manifold, so we need something else. Let's think back to Calc 3, how did we compute the length of a curve in $\mathbb{R}^3$? We used the fact that if you integrate an infitesimal velocity, you obtain an infitesimal measure of length of a curve, thus what you 
+need to do in order to measure length is to integrate the velocities along the curve. Namely for a curve $\gamma: [a, b] \rightarrow \mathbb{R}^3$, you get 
+$$
+L(\gamma) = \int_a^b \sqrt{\left< \gamma'(t), \gamma'(t)\right>}dt
+$$
+</p>
   </div>
   </div>
 
