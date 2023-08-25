@@ -1,0 +1,147 @@
+<!DOCTYPE html> 
+
+<html> 
+<style>
+
+body {
+        background-color:rgb(205, 2000, 10000);
+      }
+
+      .sidenav {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #68267c;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+.image {
+	background-image: url(https://timgbates.github.io/document/spacefromearth.jpg);
+  background-origin: content-box;
+	width: 1000px;
+	height: 250px;
+  object-fit: fill;
+  background-size: contain;
+}
+
+.header {
+	padding-top: 50px;
+	color: white;
+	font-size: 30px;
+	text-align: center;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+.main {
+  margin-left: 160px; /* Same as the width of the sidenav */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+
+}
+</style>
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+<script>
+  MathJax={
+    tex: {
+      inlineMath: [['$','$'],['\\(', '\\)']]
+    },
+    svg: {
+      fontCache: 'global'
+    }
+  };
+</script>
+<body>
+  <div class="sidenav">
+    <a href="https://timgbates.github.io/topology.html">Topology</a>
+    <a href="https://timgbates.github.io">Main</a>
+    <a href="https://timgbates.github.io/topologicalspaces.html">Topological Spaces</a>
+  </div>
+  <div class="main">
+
+    <div class="image">
+      <p class="header">Crossing Number Conjecture</p>
+    </div>
+
+    \newtheorem{thm}{Theorem}
+    \newtheorem{definition}{Definition}
+    \newtheorem{lemma}{Lemma}
+    \newtheorem{corollary}{Corollary}
+    \newtheorem{proposition}{Proposition}
+    \newtheorem{example}{Example}
+    \newtheorem{exercise}{Exercise}[section]
+    \newtheorem{conjecture}{Conjecture}
+    
+    The subject of this page is perhaps one of the most puzzling open problems in knot theory (and my personal favorite). The statement of the problem is extremely simple and only requires a couple of basic notions in knot theory. I plan to update this page periodically to include a full history of this problem and updates on progress regarding it. 
+
+    \begin{definition}
+        A knot $K\subset S^3$ is the image of a smooth embedding of the circle $S^1$ into $S^3$. 
+    \end{definition}
+    Since any embedding will miss at least one point, we can also think about this as an embedding of $S^1$ into $\mathbb{R}^3$ while keeping in mind that there is a point at infinity. Thus to visualize a knot, we could take a string, tie it up, and then glue the ends together. 
+    
+    There are many different types of embeddings that one could work with and one can convince oneself that some are more complex than others. We are going to talk about one notion with which we can capture the complexity of a knot, but first we need one more notion. 
+    
+    \begin{definition}
+        A knot diagram $D$ associated to a knot $K$ is the image of a projection of $K$ in $S^3$ to a surface $S^2$ such that the image is an immersion with only double points. Each double point will be given an extra piece of information telling us which strand is closer to the surface of the projection and which is further; whether it is an over or undercrossing. 
+    \end{definition}
+    Indeed one can show that knot diagrams exist for any knot and that the notion of knot equivalence can be translated into an equivalence class on the set of knot diagrams. As mentioned, there are some crossings which we need to account for in our diagram, and we can easily see that the number of crossings may vary a lot. 
+    
+    \begin{definition}
+        The crossing number of a knot $c(K)$ is defined to be the minimum number over all diagrams representing $K$ of the number of crossings of the knot diagram. 
+    \end{definition}
+    It is easy to see for example that the crossing number of the unknot is zero, but that the trefoil has crossing number 3. 
+    
+    When we classify knots into our link tables, the first piece of information given is typically the crossing number. 
+    
+    \begin{conjecture}
+        Let $K_1$ and $K_2$ be two oriented knots, then 
+    $$
+    C(K_1) + C(K_2) = C(K_1 \# K_2)
+    $$
+    \end{conjecture}
+    
+    
+    
+    As of August 2023, this conjecture remains a mystery. Partial results exist. For example, it is known to be true for alternating knots and torus knots, which together constitute a large collection of knots. 
+    \begin{thm}
+        (Lackenby 09') For two oriented knots $K_1$ and $K_2$, 
+        $$
+    \frac{1}{152} (C(K_1) + C(K_2) ) \leq C(K_1 \# K_2)
+    $$
+    \end{thm}
+    There are also known to be some equivalent statements which are also famous conjectures. 
+    \begin{conjecture}
+        The probability of a knot being alternating, as crossing number increases, tends towards $1$. 
+    \end{conjecture}
+    This conjecture is known to be equivalent to the negation of the crossing number conjecture. 
+</html>
