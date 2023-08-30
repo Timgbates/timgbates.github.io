@@ -7,19 +7,19 @@ body {
         background-color:rgb(205, 2000, 10000);
       }
 
-      .sidenav {
-  height: 100%;
-  width: 160px;
+      .topnav {
+  height: 100px;
+  width: 100%;
   position: fixed;
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #68267c;
+  background-color: #267c70;
   overflow-x: hidden;
-  padding-top: 20px;
+  padding-top: 10px;
 }
 
-.sidenav a {
+.topnav a {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
   font-size: 25px;
@@ -27,7 +27,7 @@ body {
   display: block;
 }
 
-.sidenav a:hover {
+.topnav a:hover {
   color: #f1f1f1;
 }
 .image {
@@ -96,6 +96,11 @@ p.theorem::before {
 p.theorem[data-attribution]::before {
   content: "Theorem " counter(theorem) " (" attr(data-attribution) ")  \2014 ";
 }
+.header {
+  background-color: #71c1cc;
+  text-align: center;
+  padding: 20px;
+}
 </style>
 <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
 <script>
@@ -108,9 +113,8 @@ p.theorem[data-attribution]::before {
     }
   };
 </script>
-
 <body>
-  <div class="sidenav">
+  <div class="topnav">
     <a href="https://timgbates.github.io/topology.html">Topology</a>
     <a href="https://timgbates.github.io">Main</a>
     <a href="https://timgbates.github.io/topologicalspaces.html">Topological Spaces</a>
