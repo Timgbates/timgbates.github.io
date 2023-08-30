@@ -47,6 +47,9 @@ A vertical ray endowed with the subspace topology is homeomorphic to $\mathbb{R}
 <h1>Sorgenfrey Line (Lower Limit Topology)</h1>
 This space is not connected. 
 
+
+
+
 <h1>Earring Space</h1>
 Sometimes called the Hawaiian earing, the Earring space is the following subset of $\mathbb{R}^2$ endowed with the subspace topology:
 $$
@@ -55,5 +58,18 @@ $$
 
 It is a classical example of a wild space. It possesses a point at $(0,0)$ where any open neighborhood is not simple connected, thus this space is not semilocally simply connected. 
 It is also interesting since its fundamental group is uncountably generated. 
+
+<h1>Cantor Set</h1>
+Also refered to as the Cantor dust, due to the fact that it is nowhere-dense,  the Cantor set is constructed as follows. 
+
+Let $E_0 = [0,1]$, and $E_1 = [0,1/3] \cup [2/3, 1]$, $E_2 = [0,1/9]\cup [2/9\cup 1/3] \cup [2/3, 7/9] \cup [8/9, 1]$, and continue inductively where $E_n$ is consists of the intervals of $E_{n-1}$ with their middle thirds removed. 
+The Cantor dust is the intersection of each $E_i$. 
+
+$$
+C = \lim_{n\rightarrow \infty} E_n = \bigcap_{n \in \mathbb{N}} E_n
+$$
+It is clear that $C$ is non-empty, and in fact it is uncountable. We equip this set with the subspace topology of $\mathbb{R}$. 
+
+
 </body>
 </html>
