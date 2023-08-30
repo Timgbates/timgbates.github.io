@@ -78,9 +78,11 @@ p.definition::before {
   counter-increment: definition; 
   content: "Definition "
   counter(definition) " \2014 "; 
+  font-weight: bold;
 }
 p.definition[data-attribution]::before {
   content: "Definition " counter(definition) " (" attr(data-attribution) ")  \2014 ";
+  font-weight: bold;
 }
 p.conjecture::before {
   counter-increment: definition; 
