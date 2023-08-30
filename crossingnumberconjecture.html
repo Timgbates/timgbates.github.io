@@ -77,7 +77,7 @@ body {
 p.definition::before {
   counter-increment: definition; 
   content: "Definition "
-  counter(definition) " \2014 "; 
+  counter(definition); 
   font-weight: bold;
 }
 p.definition[data-attribution]::before {
