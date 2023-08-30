@@ -85,6 +85,7 @@ p.definition[data-attribution]::before {
 p.conjecture::before {
   counter-increment: definition; 
   content: "Conjecture " counter(conjecture) " \2014 "; 
+  font-weight: bold;
 }
 p.conjecture[data-attribution]::before {
   content: "Conjecture " counter(conjecture) " (" attr(data-attribution) ")  \2014 ";
@@ -92,6 +93,7 @@ p.conjecture[data-attribution]::before {
 p.theorem::before {
   counter-increment: definition; 
   content: "Theorem " counter(theorem) " \2014 "; 
+  font-weight: bold;
 }
 p.theorem[data-attribution]::before {
   content: "Theorem " counter(theorem) " (" attr(data-attribution) ")  \2014 ";
