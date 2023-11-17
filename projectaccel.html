@@ -32,12 +32,17 @@ body {
 }
 .image {
 	background-image: url(https://timgbates.github.io/document/spacefromearth.jpg);
-  background-repeat: no-repeat;
-  background-origin: content-box;
+  /*background-origin: content-box;*/
 	width: 1000px;
 	height: 250px;
-  object-fit: fill;
-  background-size: contain;
+  /*object-fit: fill;*/
+  
+  height: 100%;
+
+/* Center and scale the image nicely */
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
 }
 
 .header {
