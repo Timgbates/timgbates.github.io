@@ -92,7 +92,34 @@ background-size: cover;
   background-color: #276785;
   color: white;
 }
+.sample-section-wrap {
+      position: relative;
+    }
+    .sample-section {
+      position: relative;
+      max-width: 940px;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 40px;
+      background-color:darkcyan;
+    }
 </style>
+<script>
+  function parallax_height() {
+  var scroll_top = $(this).scrollTop();
+  var sample_section_top = $(".sample-section").offset().top;
+  var header_height = $(".sample-header-section").outerHeight();
+  $(".sample-section").css({ "margin-top": header_height });
+  $(".sample-header").css({ height: header_height - scroll_top });
+}
+parallax_height();
+$(window).scroll(function() {
+  parallax_height();
+});
+$(window).resize(function() {
+  parallax_height();
+});
+</script>
 <body>
   <div class="topnav">
     <a href="https://timgbates.github.io/topology.html">Topology</a>
@@ -110,7 +137,8 @@ background-size: cover;
     </div>
 
 
-<div class="body">
+<div class="sample-section-wrap">
+<div class="sample-section">
 <p>
 The controversies with the nature of uniform acceleration radiation go back as far as Max Born in 1909. Radiation of a uniformly accelerated has since presented persistent problems in the physics literature. Some of the puzzles include: 
 <ul>
@@ -147,5 +175,6 @@ I also would like to write more in the future about the role that classical prob
       "For there is no theoretical physics without some philosophy; not admitting this fact would be self-deception" - Fritz Rohrlich
     </p>
   </body>
+</div>
 </div>
       </html>
