@@ -2,70 +2,131 @@
 
 <html> 
 <style>
-  .center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
+.body {
+  background-color:rgb(100, 139, 211);
 }
 
-
-
-body {
-        background-color:rgb(205, 2000, 10000);
-      }
-
-      .sidenav {
+.image {
+	background-image: url(https://timgbates.github.io/document/spacefromearth.jpg);
+  /*background-origin: content-box;*/
+	width: 1000px;
+	height: 1000px;
+  /*object-fit: fill;*/
+  
   height: 100%;
-  width: 160px;
+  width: 100%;
+
+/* Center and scale the image nicely */
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.header {
+	padding-top: 50px;
+  font-family:'Courier New';
+	color: rgb(255, 255, 255);
+	font-size: 50px;
+	text-align: center;
+  padding-bottom: 500 px;
+}
+
+
+.sticky {
   position: fixed;
-  z-index: 1;
   top: 0;
-  left: 0;
-  background-color: #68267c;
-  overflow-x: hidden;
-  padding-top: 20px;
+  width: 100%;
 }
 
-.sidenav a {
-  padding: 6px 8px 6px 16px;
+.sticky + .content {
+  padding-top: 102px;
+}
+
+
+.topnav a {
+  float: left;
+  color: #82f8f2;
+  text-align: center;
+  padding: 14px 16px;
   text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
+  font-size: 17px;
 }
 
-.sidenav a:hover {
-  color: #f1f1f1;
+.topnav a:hover {
+  background-color: rgb(164, 70, 219);
+  color: black;
 }
 
-.main {
-  margin-left: 160px; /* Same as the width of the sidenav */
-  font-size: 28px; /* Increased text to enable scrolling */
-  padding: 0px 10px;
+.topnav a.active {
+  background-color: #276785;
+  color: white;
 }
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
-    </style>
-<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
-<script>
-  MathJax={
-    tex: {
-      inlineMath: [['$','$'],['\\(', '\\)']]
-    },
-    svg: {
-      fontCache: 'global'
+.sample-section-wrap {
+      position: relative;
     }
-  };
+    .sample-section {
+      position: relative;
+      max-width: 1100px;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 10px;
+      background-color:rgb(100, 139, 211);
+    }
+</style>
+<script>
+  function parallax_height() {
+  var scroll_top = $(this).scrollTop();
+  var sample_section_top = $(".sample-section").offset().top;
+  var header_height = $(".sample-header-section").outerHeight();
+  $(".sample-section").css({ "margin-top": header_height });
+  $(".sample-header").css({ height: header_height - scroll_top });
+}
+parallax_height();
+$(window).scroll(function() {
+  parallax_height();
+});
+$(window).resize(function() {
+  parallax_height();
+});
 </script>
+
+
+
 <body>
-  <div class="sidenav">
-    <a href="https://timgbates.github.io">Home</a>
-    <a href="https://timgbates.github.io/projectaccel.html">Uniform Acceleration</a>
+  <div class="sticky">
+  <div class="topnav">
+    <a href="https://timgbates.github.io/topology.html">Topology</a>
+    <a href="https://timgbates.github.io">Main</a>
     <a href="https://timgbates.github.io/topologicalspaces.html">Topological Spaces</a>
+  
   </div>
+
+    <div class="image">
+      <br>
+      <br>
+      <p class="header">Uniform Acceleration</p>
+      <br>
+      <br>
+      <br>
+      <br>
+    </div>
+  </div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
   <div class="main">
   <img src="https://timgbates.github.io/document/spacecool.jpg" alt="spacecool" width="700" height="400" class="center">
 
