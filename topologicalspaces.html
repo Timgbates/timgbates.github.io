@@ -68,14 +68,6 @@ Section
 Algebraic Topology of the Knot Complement
 -------------------------------------------------------------------------------
 
-\newtheorem{thm}{Theorem}
-\newtheorem{definition}{Definition}
-\newtheorem{lemma}{Lemma}
-\newtheorem{corollary}{Corollary}
-\newtheorem{proposition}{Proposition}
-\newtheorem{example}{Example}
-\newtheorem{exercise}{Exercise}[section]
-\newtheorem{conjecture}{Conjecture}
 
 
 The exterior\footnote{Here we break slightly from the convention that 3-manifolds are denoted by $Y$. The notation $X_L$ is appropriate as we are studying the link \underline{EX}terior} is a connected compact orientable manifold with toroidal boundary, with the number of boundary components equal to the number of link components. It is clear that the homeomorphism type of $X_L$ is an invariant of the knot since any isotopy of $L$ induces a homeomorphism on $X_L$. 
@@ -192,6 +184,18 @@ Let us also recall that the
 \begin{definition}
     A knot $K$ is hyperbolic if the complement of $K$ in $S^3$ admits a hyperbolic structure (a Riemannian metric with constant negative sectional curvature)
 \end{definition}
+
+
+
+
+
+
+
+Heegaard Decompositions
+-------------------------------------------------------------------------------
+
+Handlebody theory tells us that any smooth closed orientable 3-manifold admits a handlebody decomposition. Assuming this manifold is connected, there will be a unique 0-handle and a unique 3-handle. Since handles can be attached in assending order we can begin with the 1-handles. 3-dimensional one handle is a copy of $\mathbb{D}^1 \times \mathbb{D}^2$ attached to the boundary of the 0-handle along $S^0 \times \mathbb{D}^2$. There is a unique framing for the attaching map that leaves the resulting space oriented. After attaching the 1-handles, we are left with a space $\natural_g S^1 \times \mathbb{D}^2$. It remains to describe how the 2-handles are attached. Since $\pi_1(O(1)) = 0$, it follows that we need only specify the isotopy class of the attaching sphere of this map. These can be drawn in $\partial H_1 = \Sigma_g$. Turning the handlebody upsidedown, the 2-hanles now becomming one handles, we see that this also becomes a copy of $\natural_g S^1 \times \mathbb{D}^2$, and it now remains to glue the two pieces together along their common boundary $\Sigma_g$. To describe this, we can draw the attaching spheres for both handlebodies. We can also study where the belt spheres of the handles are mapped to in $\Sigma_g$. These become the alpha and beta curves seen in a Heegaard diagram. 
+
 
 
 
