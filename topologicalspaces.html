@@ -94,13 +94,14 @@ First we cover general position. In smooth manifold theory, the intersection of 
 
 But when can we guarantee that a map is transverse? The Thom transversality theorem tells us that a smooth map $f : X \rightarrow Y$ can always be perturbed to be transverse to a given smooth submanifold $Z \subset Y$. We can immediately see some beautiful applications of this fact. 
 
-\begin{thm}
-    There are no non-orientable hypersurfaces in $\mathbb{R}^{n}$. 
-\end{thm}
+__Theorem__ 
+    _There are no non-orientable hypersurfaces in $\mathbb{R}^{n}$._ 
+
 The following proof is due to Hans Samelson.
-\begin{proof}
+
+_Proof_
     A non-orientable hypersurface is a codimension 1 submanifold of $\mathbb{R}^n$ which is closed (as a subset), without boundary, and non-orientable. Suppose that such a hypersurface $H$ did exist. Then we may find a loop on $H$ such that the normal vector pushed smoothly along this loop returns back to itself with the opposite orientation. By placing a point on the normal pushed off of $H$ and transporting it via the loop on $H$ and then connecting the two ends via the normal going through $H$ we obtain a new smooth closed path $\gamma \subset \mathbb{R}^n$ such that $\gamma$ meets $H$ at a single point. Since $\mathbb{R}^n$ is contractible, we can find a smoothly embedded disk $D \hookrightarrow \mathbb{R}^n$ whose boundary is $\gamma$. By the transversality theorem, we can take this disk to be transverse to $H$ and hence $H \cap D$ will consist of finitely many closed loops in the interior of $D$ and a finite collection of arcs which have their end points on the boundary of $D$. However, the end points of these arcs must be distinct which tells us that $\partial D \cap H$ must consist of an even number of points, but we know that $\partial D \cap H$ consists of a single point, hence we have reached a contradiction. 
-\end{proof}
+
 As a corollary, we see that projective planes and Klein bottles may never be smoothly embedded into $\mathbb{R}^3$. 
 
 
@@ -136,9 +137,8 @@ __Theorem : __
 
     Let $K$ be a knot in $S^3$. If $\Sigma$ is a smoothly embedded 2-sphere which intersects $K$ transversely, then $\Sigma \cap K$ is an even collection of points. Suppose that $\Sigma \cap K$ consists of two points. The Sch\"onflies theorem guarantees that $S^3$ is split into two sets homeomorphic to $B^3$. Let $\alpha$ and $\beta$ denote the arcs of $K$ on either side of $\Sigma$. Joining a trivial arc going along $\Sigma$, we have now created two new knots $K_1$ and $K_2$. 
 
-    \begin{definition}
-        A knot is said to be prime if each smoothly embedded sphere $\Sigma$ which meets $K$ transversely in two points separates $K$ into components where one is unknotted. 
-    \end{definition}
+    __Definition__ 
+        _A knot is said to be prime if each smoothly embedded sphere $\Sigma$ which meets $K$ transversely in two points separates $K$ into components where one is unknotted._
     
     A prime decomposition theorem exists for oriented knots. So that any knot can be uniquely decomposed into finitely many prime components.
     
@@ -151,14 +151,14 @@ __Theorem : __
     
     
     
-    \begin{thm}
-        Let $K_1, K_2$ be knots in $S^3$, then $g(K_1 \# K_2 ) = g(K_1) + g(K_2)$. 
-    \end{thm}
-    \begin{proof}
+    __Theoreom__ 
+        _Let $K_1, K_2$ be knots in $S^3$, then $g(K_1 \# K_2 ) = g(K_1) + g(K_2)$._ 
+  
+    _Proof_
         Let $F_1$ and $F_2$ be genus minimizing surfaces for $K_1$ and $K_2$ respectively, then $F_1 \# F_2$ is a Seifert surface of $K_1 \# K_2$ with genus $g(F_1) + g(F_2)$ so we see that $g(K_1 \# K_2) \leq g(K_1) + g(K_2)$. 
     
         To see the other direction, let $F$ be a genus minimizing Seifert surface of $K_1 \# K_2$. Let $\Sigma$ be a 2-sphere separating $K_1$ and $K_2$, then we see by general position that $F \cap \Sigma = \beta \sqcup \left( \bigsqcup_{i= 1}^n \gamma_i\right)$ where $\gamma_i$ are simple closed curves. I claim that each innermost $\gamma_i$ bounds a disk $D \subset F$. If not, then we could cut along $\gamma_i$ and glue in two new disks which give a new Seifert surface for $K_1 \# K_2$ of genus lower than $F$, but since $F$ is genus minimizing, this is not possible and we see that $\gamma_i$ bounds a disk on $F$. We can then perturb $\Sigma$ to $\Sigma'$ so that $F \cap \Sigma'$ consists of one fewer $\gamma_i$. Repeating this process inductively, we see that there exists a 2-sphere $\Sigma'$ seperating $K_1$ and $K_2$ such that  $F \cap \Sigma = \beta$ where $\beta$ is a simple arc between the two points in the set $K \cap \Sigma$. Cutting along $\beta$, we obtain two Seifert surfaces of $K_1$ and $K_2$ whose genuses sum to $g(K_1 \# K_2)$, hence $g(K_1 \# K_2) \geq g(K_1) + g(K_2)$ and we are done. 
-    \end{proof}
+  
     
     
     
