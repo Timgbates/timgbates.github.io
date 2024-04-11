@@ -108,7 +108,8 @@ $$
 H_n(\partial X_K) = \begin{cases} \mathbb{Z} \quad n = 0,2 \\ \mathbb{Z}\oplus\mathbb{Z} \quad n = 1 \\ 0 \quad \text{else} \end{cases}
 $$
 Now consider the following long exact sequence
-$$
+
+<!--$$
 \begin{tikzcd}[
   column sep=small,row sep=small,
   ar symbol/.style = {draw=none,"\textstyle#1" description,sloped},
@@ -117,14 +118,14 @@ $$
     \longrightarrow H_2(X_k) \arrow{r}& H_2(X_k, \partial X_k) \arrow{r}{\partial} &H_1(\partial X_k) \arrow{r}{\iota_*}& H_1(X_k) \arrow{r}{j_*}&H_1(X_k, \partial X_k) \longrightarrow\\
     0\ar[u,isomorphic] & & \mathbb{Z}\oplus \mathbb{Z}\ar[u,isomorphic] & \mathbb{Z} \ar[u,isomorphic]
 \end{tikzcd}
-$$
+$$-->
+
 
 $$
 \require{AMScd}
 \begin{CD}
-\longrightarrow H_2(X_k) @>{}>> H_2(X_k, \partial X_k) @>>> H_1(\partial X_k) ;\\
+\longrightarrow H_2(X_k) @>{}>> H_2(X_k, \partial X_k) @>>> H_1(\partial X_k) @>{\iota_*}>> H_1(X_k) @>{j_*}>> H_1(X_k, \partial X_k) \longrightarrow ;\\
 @VVV @VVV \\
-K(Y) @>{ch}>> H(Y;\mathbb Q);
 \end{CD}
 $$
 
