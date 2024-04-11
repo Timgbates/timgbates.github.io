@@ -62,12 +62,19 @@ body {
 
 This "blog" project will hopefully develop into a complete set of notes on topology with an emphasis on low dimensional manifolds and Heegaard Floer homology. 
 
-Section
+Knot Theory
 ===============================================================================
+
 
 Algebraic Topology of the Knot Complement
 -------------------------------------------------------------------------------
 
+$$\require{AMScd}
+\begin{CD}
+K(X) @>{ch}>> H(X;\mathbb Q);\\
+@VVV @VVV \\
+K(Y) @>{ch}>> H(Y;\mathbb Q);
+\end{CD}$$
 
 
 The exterior\footnote{Here we break slightly from the convention that 3-manifolds are denoted by $Y$. The notation $X_L$ is appropriate as we are studying the link \underline{EX}terior} is a connected compact orientable manifold with toroidal boundary, with the number of boundary components equal to the number of link components. It is clear that the homeomorphism type of $X_L$ is an invariant of the knot since any isotopy of $L$ induces a homeomorphism on $X_L$. 
@@ -188,14 +195,20 @@ Let us also recall that the
 
 
 
-
+3-Manifold Topology
+===============================================================================
 
 
 
 Heegaard Decompositions
 -------------------------------------------------------------------------------
 
-Handlebody theory tells us that any smooth closed orientable 3-manifold $Y$ admits a handle decomposition. Assuming this manifold is connected, there will be a unique 0-handle and a unique 3-handle. Since handles can be attached in ascending order we can begin with the 1-handles. 3-dimensional one handle is a copy of $\mathbb{D}^1 \times \mathbb{D}^2$ attached to the boundary of the 0-handle along $S^0 \times \mathbb{D}^2$. There is a unique framing for the attaching map that leaves the resulting space oriented. After attaching the 1-handles, we are left with a space $H \cong \natural_g S^1 \times \mathbb{D}^2$. Next we need to see how the two handles are attached and since $\pi_1(O(1)) = 0$, it follows that we need only specify the isotopy class of the attaching sphere of this map. These can be drawn in $\partial H_1 = \Sigma_g$. As there is a unique way to attach the 3-handle, it follows that a 3-manifold can be specified by a collection of $g$ embedded curves in $\Sigma_g$. Alternatively, turning the handlebody upsidedown, the 2-handles now becoming one handles, the 3 and 2 handles form a handlebody $H'$ that is homeomorphic to $\natural_g S^1 \times \mathbb{D}^2$. It remains to glue the two pieces together along their common boundary $\Sigma_g$, i.e. $Y = H \cup_{\varphi} H'$. We could specify an element in the mapping class group of $\Sigma_g$ or we can study where the belt spheres of the handles are mapped to in $\Sigma_g$. Consider the g-handle $H$ and remove a neighborhood of the belt spheres of each 1-handle. The space we are left with is homeomorphic to $\mathbb{D}^3$. We can then attach the neighborhoods of the belt spheres to the other handlebody $H'$ by specifying an isotopy class for each belt sphere in $\Sigma_g$ and then there is a unique way to glue in the 3-ball. Doing this for both handlebodies allows us to specify the 3-manifold. These curves are called alpha and beta curves and they clearly satisfy: 
+Handlebody theory tells us that any smooth closed orientable 3-manifold $Y$ admits a handle decomposition. 
+Assuming this manifold is connected, there will be a unique 0-handle and a unique 3-handle. Since handles can be attached in ascending order we can begin with the 1-handles. 
+3-dimensional one handle is a copy of $\mathbb{D}^1 \times \mathbb{D}^2$ attached to the boundary of the 0-handle along $S^0 \times \mathbb{D}^2$. There is a unique framing for the attaching map that leaves the resulting space oriented. 
+After attaching the 1-handles, we are left with a space $H \cong \natural_g S^1 \times \mathbb{D}^2$. Next we need to see how the two handles are attached and since $\pi_1(O(1)) = 0$, it follows that we need only specify the isotopy class of the attaching sphere of this map. 
+These can be drawn in $\partial H_1 = \Sigma_g$. As there is a unique way to attach the 3-handle, it follows that a 3-manifold can be specified by a collection of $g$ embedded curves in $\Sigma_g$. Alternatively, turning the handlebody upsidedown, the 2-handles now becoming one handles, the 3 and 2 handles form a handlebody $H'$ that is homeomorphic to $\natural_g S^1 \times \mathbb{D}^2$. It remains to glue the two pieces together along their common boundary $\Sigma_g$, i.e. $Y = H \cup_{\varphi} H'$. We could specify an element in the mapping class group of $\Sigma_g$ or we can study where the belt spheres of the handles are mapped to in $\Sigma_g$. Consider the g-handle $H$ and remove a neighborhood of the belt spheres of each 1-handle. The space we are left with is homeomorphic to $\mathbb{D}^3$. We can then attach the neighborhoods of the belt spheres to the other handlebody $H'$ by specifying an isotopy class for each belt sphere in $\Sigma_g$ and then there is a unique way to glue in the 3-ball. Doing this for both handlebodies allows us to specify the 3-manifold. 
+These curves are called alpha and beta curves and they clearly satisfy: 
 
     + The alpha curves are pairwise disjoint 
     + Each alpha curve bounds a disk in H and each beta curve bounds a disk in H'
@@ -203,7 +216,8 @@ Handlebody theory tells us that any smooth closed orientable 3-manifold $Y$ admi
 
 
 
-
+4-Manifold Topology
+===============================================================================
 
 
 
