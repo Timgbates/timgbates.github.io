@@ -81,8 +81,57 @@ __Theorem : __ _If $f : \mathbb{R}^n \rightarrow \mathbb{R}^m$ is smooth at $a \
 
 
 
+
+
 Knot Theory
 ===============================================================================
+
+
+A Primer on Geometric Topology
+-------------------------------------------------------------------------------
+
+First we cover general position. In smooth manifold theory, the intersection of two smooth submanifolds is guaranteed to be another smooth submanifold when the intersection is transverse. When two surfaces $\Sigma_1, \Sigma_2 \subset S^3$ meet transversely $\Sigma_1 \cap \Sigma_2$ is a smooth 1-dimensional submanifold of $S^3$ which can consist of finitely many loops and arcs. When 
+
+But when can we guarantee that a map is transverse? The Thom transversality theorem tells us that a smooth map $f : X \rightarrow Y$ can always be perturbed to be transverse to a given smooth submanifold $Z \subset Y$. We can immediately see some beautiful applications of this fact. 
+
+\begin{thm}
+    There are no non-orientable hypersurfaces in $\mathbb{R}^{n}$. 
+\end{thm}
+The following proof is due to Hans Samelson.
+\begin{proof}
+    A non-orientable hypersurface is a codimension 1 submanifold of $\mathbb{R}^n$ which is closed (as a subset), without boundary, and non-orientable. Suppose that such a hypersurface $H$ did exist. Then we may find a loop on $H$ such that the normal vector pushed smoothly along this loop returns back to itself with the opposite orientation. By placing a point on the normal pushed off of $H$ and transporting it via the loop on $H$ and then connecting the two ends via the normal going through $H$ we obtain a new smooth closed path $\gamma \subset \mathbb{R}^n$ such that $\gamma$ meets $H$ at a single point. Since $\mathbb{R}^n$ is contractible, we can find a smoothly embedded disk $D \hookrightarrow \mathbb{R}^n$ whose boundary is $\gamma$. By the transversality theorem, we can take this disk to be transverse to $H$ and hence $H \cap D$ will consist of finitely many closed loops in the interior of $D$ and a finite collection of arcs which have their end points on the boundary of $D$. However, the end points of these arcs must be distinct which tells us that $\partial D \cap H$ must consist of an even number of points, but we know that $\partial D \cap H$ consists of a single point, hence we have reached a contradiction. 
+\end{proof}
+As a corollary, we see that projective planes and Klein bottles may never be smoothly embedded into $\mathbb{R}^3$. 
+
+
+
+
+The following set of theorems are rather nontrivial. For proofs I recommend "Topology of 2 and 3 manifolds" by Moise. 
+
+__Theorem : __ 
+    _(Jordan-Sch\"onflies) If $S^1 \hookrightarrow S^2$ is a smooth embedding, then $S^2 \backslash \iota(S^1) \cong \mathbb{D}^2 \sqcup \mathbb{D}^2$._ 
+\end{thm}
+This tells us that any smoothly embedding circle in $S^2$ cuts out two hemispheres. 
+
+__Theorem : __ 
+    _(Sch\"onflies) If $S^2 \hookrightarrow S^3$ is a smooth (PL) embedding, then $S^3 \backslash \iota(S^2) = \mathbb{B}^3 \sqcup \mathbb{B}^3$._ 
+
+
+
+__Definition : __ 
+    _For any smoothly embedded 2-sphree $\Sigma \hookrightarrow S^3$ which meets $K$ in two points, then $K = A \sqcup B$,_ 
+
+
+
+
+Next are the famous results of Papakyriakopoulos. 
+
+\begin{thm}
+    (Loop Theorem)
+\end{thm}
+
+__Theorem : __ 
+    _(Sphere Theorem) If $Y$ is an oriented 3-manifold with $\pi_2(Y) \neq 0$, then there exists a properly embedded $S^2$ representing a non-zero class in $\pi_2(Y)$._ 
 
 
 Algebraic Topology of the Knot Complement
