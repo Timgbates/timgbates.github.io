@@ -134,6 +134,35 @@ __Theorem : __
     _(Sphere Theorem) If $Y$ is an oriented 3-manifold with $\pi_2(Y) \neq 0$, then there exists a properly embedded $S^2$ representing a non-zero class in $\pi_2(Y)$._ 
 
 
+    Let $K$ be a knot in $S^3$. If $\Sigma$ is a smoothly embedded 2-sphere which intersects $K$ transversely, then $\Sigma \cap K$ is an even collection of points. Suppose that $\Sigma \cap K$ consists of two points. The Sch\"onflies theorem guarantees that $S^3$ is split into two sets homeomorphic to $B^3$. Let $\alpha$ and $\beta$ denote the arcs of $K$ on either side of $\Sigma$. Joining a trivial arc going along $\Sigma$, we have now created two new knots $K_1$ and $K_2$. 
+
+    \begin{definition}
+        A knot is said to be prime if each smoothly embedded sphere $\Sigma$ which meets $K$ transversely in two points separates $K$ into components where one is unknotted. 
+    \end{definition}
+    
+    A prime decomposition theorem exists for oriented knots. So that any knot can be uniquely decomposed into finitely many prime components.
+    
+    
+    One may also go the other direction by performing a connected sum of knots. Let $K_1$ and $K_2$ be two oriented knots in $S^3$. Isotope a strand from $K_1$ and one from $K_2$ so that one can find a smooth disk $D$ with oriented boundary consisting of four arcs, one of which on the strand of $K_1$ and one on the strand of $K_2$ (where the orientations align). Delete those two strands and then glue the other two strands from $\partial D$. The new knot $K_1 \# K_2$ inherits an orientation from $K_1$ and $K_2$. We can ask how properties of knots behave under connected sum. 
+    
+    
+    
+     
+    
+    
+    
+    \begin{thm}
+        Let $K_1, K_2$ be knots in $S^3$, then $g(K_1 \# K_2 ) = g(K_1) + g(K_2)$. 
+    \end{thm}
+    \begin{proof}
+        Let $F_1$ and $F_2$ be genus minimizing surfaces for $K_1$ and $K_2$ respectively, then $F_1 \# F_2$ is a Seifert surface of $K_1 \# K_2$ with genus $g(F_1) + g(F_2)$ so we see that $g(K_1 \# K_2) \leq g(K_1) + g(K_2)$. 
+    
+        To see the other direction, let $F$ be a genus minimizing Seifert surface of $K_1 \# K_2$. Let $\Sigma$ be a 2-sphere separating $K_1$ and $K_2$, then we see by general position that $F \cap \Sigma = \beta \sqcup \left( \bigsqcup_{i= 1}^n \gamma_i\right)$ where $\gamma_i$ are simple closed curves. I claim that each innermost $\gamma_i$ bounds a disk $D \subset F$. If not, then we could cut along $\gamma_i$ and glue in two new disks which give a new Seifert surface for $K_1 \# K_2$ of genus lower than $F$, but since $F$ is genus minimizing, this is not possible and we see that $\gamma_i$ bounds a disk on $F$. We can then perturb $\Sigma$ to $\Sigma'$ so that $F \cap \Sigma'$ consists of one fewer $\gamma_i$. Repeating this process inductively, we see that there exists a 2-sphere $\Sigma'$ seperating $K_1$ and $K_2$ such that  $F \cap \Sigma = \beta$ where $\beta$ is a simple arc between the two points in the set $K \cap \Sigma$. Cutting along $\beta$, we obtain two Seifert surfaces of $K_1$ and $K_2$ whose genuses sum to $g(K_1 \# K_2)$, hence $g(K_1 \# K_2) \geq g(K_1) + g(K_2)$ and we are done. 
+    \end{proof}
+    
+    
+    
+
 Algebraic Topology of the Knot Complement
 -------------------------------------------------------------------------------
 
