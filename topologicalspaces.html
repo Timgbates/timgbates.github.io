@@ -315,6 +315,16 @@ __Lemma (Isotopy Lemma)__  _If $\varphi$ and $\varphi'$ are isotopic embeddings 
 h-Cobordism Theorem 
 -------------------------------------------------------------------------------
 
+__Definition__ _A cobordism between two oriented closed n-dimensional manifolds $M_0$ and $M_1$ is an (n+1)-dimensional compact oriented manifold $W$ such that 
+$\partial W = \overline{M_0} \sqcup M_1$._
+
+The simplest cobordism that one can construct is the trivial cobordism from a manifold $M$ to itself, defined as $M \times [0,1]$. It is not hard to show that cobordisms form an equivalence relation
+on oriented smooth closed manifolds of a given dimension. 
+
+
+__Definition__ _An h-cobordism between two manifolds $M_0$ and $M_1$ is a cobordism $W$ such that the inclusion maps $\iota: M_i \hookrightarrow W$ are homotopy equivalences._
+
+__h-Cobordism Theorem__ 
 
 
 3-Manifold Topology
@@ -349,8 +359,17 @@ Let $L$ be an oriented link in $S^3$. Along each component $L_i$ there is a uniq
 4-Manifold Topology
 ===============================================================================
 
+Vector Bundles
+===============================================================================
 
-
+Let $X$ be a topological space, then a vector bundle $(E, X, \pi)$ is a triple consisting of a continuous map $\pi: E \rightarrow X$ where $E$ is called the total space of the vector bundle
+such that $\pi^{-1}(x)$ is a vector space and such that for all $x \in X$, there exists an open neighborhood $U \ni x$ such that 
+$$
+\require{tikz-cd}
+\pi^{-1}(U)\arrow{dr}{\pi} \arrow{rr}{\cong} & & U \times k^n \arrow{dl}{p} \\
+& U 
+$$
+commutes
 
 Heegaard-Floer homology
 ===============================================================================
