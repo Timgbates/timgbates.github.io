@@ -374,16 +374,24 @@ commutes
 $$
 \require{AMScd} 
 \begin{cd}
-\pi^{-1}(U) {_{\rlap{\ g\circ f}}\style{display: inline-block; transform: rotate(30deg)} @>>> U \times k^n \\
+\pi^{-1}(U) {_{\rlap{\ g\circ f}}\style{display: inline-block; transform: rotate(30deg)} @>>> U \times k^n 
 \end{cd}
 $$
 
 Heegaard-Floer homology
 ===============================================================================
 
+$Sym^g(\Sigma)$
+-------------------------------------------------------------------------------
 
 
+__Proposition__ $\textrm{Sym}^n(\mathbb{C}) = \mathbb{C}^n$. 
 
+_Proof_ Let $(a_1, a_2, \dots , a_n)$ be a tuple of n points in $\mathbb{C}$, then I can associate to this tuple a polynomial 
+$(z- a_1)(z-a_2)\dots (z-a_n) = z^n + c_1 z^{n-1} + c_2 z^{n-2} +\dots + c_{n-1} z + c_n$, where the $c_i$ are uniquely determined by the 
+collection $a_1, \dots ,a_n$ up to rearrangment. We see then that assigning an unordered n-tuple $(a_1, \dots ,a_n)$ to the tuple $(c_1, \dots , c_n)$ is 
+a well defined function from $\textrm{Sym}^n(\mathbb{C})$ to $\mathbb{C}^n$. I claim that this is a homeomorphism. Injectivity is obvious and surjectivity is a consequence of the 
+fundamental theorem of algebra. A little work shows that this map as well as its inverse are continuous. $\square$ 
 
 
 
