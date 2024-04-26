@@ -496,10 +496,117 @@ Maslov and Alexander gradings. Ozsvath and Szabo exploited this to give a charac
 
 ### Gradings
 
+
+
+### Alternating knots
+
+
+This should hopefully summarize the paper by OS on the knot floer homology of alternating knots. 
+
+__Theorem (Ozsvàth Szabò__ _Let $K$ be an alternating knot in $S^3$ and $a_s$ denote the $s$-coefficient in the symmetrized Alexander polynomial, then_
+$$
+    \widehat{HFK}(K,s) = \mathbb{Z}^{|a_s|}
+$$
+_and is supported in Maslov grading $s + \sigma(K)/2$ where $\sigma(K)$ is the signature of the knot. _
+
+
+This theorem is used to prove the next result. 
+
+__Theorem__ _Let $K$ be an alternating knot oriented such that $\sigma(K) \leq 0$. Then for all $s > 0$, _
+$$
+HF^+(K, s) \cong \mathbb{Z}^{b_s} \oplus \left( \mathbb{Z}[u]/U^{\delta(\sigma, s)}\right)
+$$
+
+
+
+
+What they do to prove the first theorem is construct a doubly pointed Heegaard diagram from a marked diagram of $K$ such that the Kauffman states are put in one to one correspondance with the generators of $\reallywidehat{CFK}$. They then utilize functions $S : \mathscr{S} \rightarrow \mathbb{Z}$ and $ M : \mathscr{S} \rightarrow \mathbb{Z}$ which are defined in terms of local contributions of the states then define gradings on elements in  $\mathbb{T}_{\alpha} \cap \mathbb{T}_{\beta}$ which they prove correspond to the Maslov and Alexander gradings of the Knot Floer chain complex. Moreover, when the knot is alternating they obtain a formula 
+$$
+2( M(x) - S(x)) = \sigma(K)
+$$
+where $\sigma(K)$ is the signature of the knot $K$. We see then that every generator supported in Alexander grading $s$ must be supported in Maslov grading $s + \sigma(K)/2$ and thus the homology of this complex in this grading is $\reallywidehat{HFK}(K,s) = \mathbb{Z}^{b}$, where $b \in \mathbb{Z}_{\geq 0 }$. To determine $b$ they use the fact that
+$$
+\Delta_K(t) = \sum_{ x \in \mathscr{S}} (-1)^{M(x)} t^{S(x)} = \sum_{x \in \mathscr{S}} (-1)^{S(x) + \sigma(K)/2} t^{S(x)}
+$$
+where $\Delta_K(t)$ denotes the symmetrized Alexander polynomial (a theorem of Kauffman), 
+and so the rank of $\reallywidehat{HFK}(K,s)$ is equal to $|a_s|$ where $a_s$ is the s coefficient in the symmetrized Alexander polynomial. 
+
+What is left for us to do is:
+\begin{enumerate}
+\item Construct this doubly pointed Heegaard diagram $\mathcal{H}$ and demonstrate that 
+\begin{itemize}
+    \item Kauffman states are in bijection with $\mathbb{T}_{\alpha} \cap \mathbb{T}_{\beta}$ 
+    \item $\mathcal{F}(x) = S(x)$ 
+    \item $\textrm{gr}(x) = M(x)$
+\end{itemize}
+\item Demonstrate that if $K$ is alternating then $2(M(x) - S(x)) = \sigma(K)$.
+\end{enumerate}
+
+
+__Background__  
+Let $D$ be a marked diagram, and let $\mathcal{R}$ be the regions of the diagram excluding the two regions adjacent to the marked edge. 
+
+__Definition__  _A Kauffman state for a marked diagram $D$ is a one to one assignment of vertices to regions in $\mathcal{R}$. _
+
+
+
+
+\textbf{First Step of Proof}
+
+Let $D$ be a marked diagram for $K$ where the marked edge is adjacent to the region containing $\infty$. We can construct a Heegaard diagram by taking the surface which projects to a neighborhood of the diagram. This will be a genus $n+1$ surface. The $\alpha$ curves are those in this surface which trace out the boundaries of the regions (except the region containing infinity). Call $\alpha_{n+1}$ the curve which borders the region next to the marked edge. Let $\beta_1, \dots , \beta_n$ denote the curves which we locally get by 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=.4\linewidth]{Screen Shot 2024-04-25 at 5.27.07 PM.png}
+\end{figure}
+
+and $\beta_{n+1}$ is chosen to be a meridian around the marked edge, and place the $w$ and $z$ basepoints on either side of $\beta_{n+1}$. Notice that Kauffman states correspond to an assignment of a region (not including the adjacent regions to the marked edge) to a crossing, and that a generator in $\mathbb{T}_{\alpha} \cap \mathbb{T}_{\beta}$ corresponds to an assignment of an $\alpha$ curve to a vertex and the $\alpha_{n+1}$ curve to $\beta_{n+1}$ i.e. a Kauffman state. 
+
+
+
+$\mathcal{F}(x) = S(x)$
+
+To show this we first say that two states are related by a transposition. 
+
+
+
+
+
+
+
+__Second Step__
+
+Recall the theorem of Gordon and Litherland that if $K$ is alternating then 
+$$
+\sigma(K) = \#\textrm{Black Regions} - \#\textrm{Positive Crossings} - 1
+$$
+
+We can see from the definitions of $m(x,v)$ and $s(x,v)$ that 
+$$
+m(x,v) - s(x,v) + \frac{\epsilon(v) + 1}{4} = \begin{cases}
+    1/2 \quad \textrm{Over-under crossing} \\
+    0 \quad \textrm{Under-over crossing}
+\end{cases}
+$$
+At this point I should point out that the OS paper has a TYPO. They have a 2 where I have a 4 in the expression above. 
+Now notice that 
+$$
+\sum_{v} \frac{\epsilon(v) + 1}{2} = \frac{1}{2}[\#p - \# n + \#v] = \frac{1}{2} (2 \# p) = \#p
+$$
+and hence 
+$M(x) - S(x) + \#p = 1/2(\#\textrm{Black regions} - 1)$
+we then see that 
+$$
+2(M(x) - S(x)) = \#(\textrm{Black regions}) - 1 - \#\textrm{Positive crossings} = \sigma(K)
+$$
+
+
+
+
 <!-- Markdeep: --><style class="fallback">body{visibility:hidden;white-space:pre;font-family:monospace}</style><script src="markdeep.min.js" charset="utf-8"></script><script src="https://morgan3d.github.io/markdeep/latest/markdeep.min.js?" charset="utf-8"></script><script>window.alreadyProcessedMarkdeep||(document.body.style.visibility="visible")</script>
 
 
 The point of this page is just to remind me that point set topology still has some neat things. 
+
 
 
 
