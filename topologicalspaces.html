@@ -324,7 +324,25 @@ on oriented smooth closed manifolds of a given dimension.
 
 __Definition__ _An h-cobordism between two manifolds $M_0$ and $M_1$ is a cobordism $W$ such that the inclusion maps $\iota: M_i \hookrightarrow W$ are homotopy equivalences._
 
-__h-Cobordism Theorem__ 
+Notice that if $M_i$ are simply connected, then the condition of $W$ being an h-cobordism is equivalent to $W$ being simply connected and $H_k(W, M) = 0$ for all $i$. 
+This follows from applying the Hurewicz theorem and CW approximation. An obvious h-cobordism from $M$ to itself is the space $M \times [0,1]$ from which we obviously can 
+conclude that both boundary components are diffeomorphic. What we will see is that admiting an h-cobordism in high dimensions is as good as the trivial cobordism. 
+
+
+
+__h-Cobordism Theorem__ _Let $M$ and $N$ be two compact simply connected oriented $m$-dimensional manifolds with $m \geq 5$ such that an h-cobordism $W$ exists,
+then there exists a diffeomorphism $\varphi: W \rightarrow M \times [0,1]$ which may be taken to be identity on $M$, i.e. $\varphi|_{M} = 1_M$. _
+
+The following presentation is taken from Milnor and showcases some powerful applications of the h-cobordism theorem. 
+
+__Theorem__ _Suppose $W^n$ is compact simply connected smooth n-dimensional manifold with $n \geq 6$ with simply connected boundary, then TFAE 
+
+1) $W$ diffeomorphic to $D^n$ 2) $W$ is homeomorphic to $D^n$ 3) $W$ is contractible 4) $W$ has the integral homology type of a point.  _
+
+_Proof_ It's obvious that 1 implies 2 implies 3 implies 4. It remains to show 4 implies 1.  Take $D \subset W$ to be a smoothly embedded 
+disk in the interior of $W$, then $\partial (W - int(D)) = \partial D \sqcup N$, so $W - int(D)$ is a cobordism. Moreover $H_*(W - int(D), \partial D) \cong H_*(W, D) = 0$ by excision
+hence $W - int(D_0)$ is an h-cobordism so by the h-cobordism theorem $W - int(D) \cong \partial D \times [0,1]$ and upon gluing in $D$ we see that $W$ is diffeomorphic to $D^n$ as required. $\square$
+
 
 
 3-Manifold Topology
@@ -340,6 +358,15 @@ $\phi|_{\partial Y'} = Id$. _
 An immediate corollary for this is the existence of foliations of 3-manifolds. Thurston and Winkelnkemper also use this to prove the existence of contact forms on closed orientable 3-manifolds.
 
 
+
+
+
+__Theorem (Loop Theorem)__ _Let $Y$ be a 3-manifold with boundary $\partial Y$. If $(D^2, \partial D^2) \rightarrow (Y, \partial Y)$ is not null-homotopic, then
+there exists an embedding $(D^2, \partial D^2 ) \hookrightarrow (Y,\partial Y)$ also not null-homotopic. _
+
+An easy corollary is Dehn's lemma. 
+
+__ Theorem (Dehn's Lemma)
 
 Heegaard Decompositions
 -------------------------------------------------------------------------------
