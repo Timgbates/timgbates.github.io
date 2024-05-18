@@ -171,24 +171,7 @@ $(window).resize(function() {
   <div class="main">
   <div class="header">
   </div>
-  <script>
-    function parallax_height() {
-    var scroll_top = $(this).scrollTop();
-    var sample_section_top = $(".sample-section").offset().top;
-    var header_height = $(".sample-header-section").outerHeight();
-    $(".sample-section").css({ "margin-top": header_height });
-    $(".sample-header").css({ height: header_height - scroll_top });
-  }
-  parallax_height();
-  $(window).scroll(function() {
-    parallax_height();
-  });
-  $(window).resize(function() {
-    parallax_height();
-  });
-  </script>
-  
-    <div class="sample-section">
+
     <h2 text-align: center;> About Me </h2>
     <p style="color:rgb(0, 0, 0);">Hi I'm Tim and I'm a first year PhD. student at Rutgers. I like thinking about manifolds of dimensions up to and including 4. 
       More concretely I am interested in Heegaard-Floer homology and its many sister theories. I attended Texas A&M University from 2019 to 2023 where I completed a B.S. and M.S. degree in Mathematics with a minor in physics. 
