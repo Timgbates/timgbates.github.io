@@ -740,8 +740,19 @@ __Theorem__ _(Kronheimer Mrowka) In $H_2(\mathbb{CP}^2;\mathbb{Z}) = \left< h\ri
 
 This theorem is known as the Thom conjecture and the proof of Kronheimer and Mrowka used Seiberg-Witten theory. 
 
-Now let $X = S^2 \times S^2$. If $\alpha = ax + by$ with $ a, b \geq 0$, then we know that 
+Now let $X = S^2 \times S^2$. If $\alpha = ax + by$ with $ a, b \geq 0$, then we know that if $a, b > 0$ then $g(\alpha) = (a-1)(b-1)$ and if either 
+$a$ or $b$ are zero then $g(\alpha = 0)$. Now it is not so hard to find surfaces which realize these genera, but how do we check minimality? The idea is to use Seiberg-Witten invariants!
 
+__Pseudo-Definition__ The Seiberg Witten invariant $SW_X : H^2(X; \mathbb{Z}) \rightarrow \mathbb{Z}$ counts solutions of a certain set of PDEs associated to a class $\alpha \in H^2(X)$. 
+
+
+__Theorem (Adjunction inequality)__ _If $\Sigma \subset X$ is a surface such that $ \Sigma \cdot \Sigma \geq 0$, $g(\Sigma)   > 0$ and 
+$SW_X(K) \neq 0$ then $2 g(\Sigma) - 2 \geq \Sigma \cdot \Sigma + |\left< K , [\Sigma]\right>|$ _
+
+__Theorem__ (Taubes) _If $X$ is symplectic and $b_2^+(X) > 1$ then $SW_X(c_1(X)) = \pm 1$. _
+
+__Theorem (Ozsvàth and Szabò)__ _Let $(X,\omega)$ be symplectic and $C \subset X$ a symplectic submanifold and $\Sigma\subset X$ an embedded surface. If 
+$[\Sigma] = [C]$ then $g(\Sigma) \geq g(C)$._
 
 
 <!-- Markdeep: --><style class="fallback">body{visibility:hidden;white-space:pre;font-family:monospace}</style><script src="markdeep.min.js" charset="utf-8"></script><script src="https://morgan3d.github.io/markdeep/latest/markdeep.min.js?" charset="utf-8"></script><script>window.alreadyProcessedMarkdeep||(document.body.style.visibility="visible")</script>
