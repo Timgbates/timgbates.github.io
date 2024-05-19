@@ -303,6 +303,25 @@ Jones Polynomial
 _Definition_     The Kauffman bracket associated to a link diagram $D$ is an integral Laurent polynomial $\left< D \right> \in \mathbb{Z}[A, A^{-1}]$ characterized by the following criterion: 
 ![](https://timgbates.github.io/document/knottheoryimages/Kauffmanbrackerules.png width="450px" border="1")
 
+The reader should ponder about whether or not this is well defined! We will prove this later, but for now
+let us see how the bracket behaves under Reidemeister moves.
+
+__Proposition__ The Kauffman bracket is unchanged by R2 and R3. 
+
+__Proposition__ The Kauffman bracket changes in the following way after R1. 
+
+In order to upgrade $\left< D \right>$ into an invariant, we need to choose an orientation for $K$. 
+
+__Proposition__ _ $(-A)^{-3w(D)} \left< D \right>$ is an invariant of the oriented link represented by $D$._
+
+This invariant under a change of variables $A^{-2} \mapsto t^{1/2} $ is called the \underline{Jones polynomial}. One can check that the Jones polynomial is characterized by $V(O) = 1$ and 
+$$
+t^{-1}V(L_+) - t V(L_-) + (t^{-1/2} - t^{1/2}) V(L_0)
+$$
+
+__Theorem__ _Let $K$ be an oriented knot, and $V_K(t)$ be its Jones polynomial, then $V_{\overline{K}} (t) = V_{K}(t^{-1})$. _
+
+_Proof_
 
 Handlebody Theory 
 ===============================================================================
