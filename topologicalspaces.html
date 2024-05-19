@@ -455,6 +455,25 @@ $$
 \end{cd}
 $$
 
+
+
+
+
+
+__Definition__ Let $f: X \rightarrow Y$ be continuous and let $E \overset{\pi} Y$ be a vector bundle, then 
+define the pullback bundle $E_f \overline{\pi_f}{\rightarrow} X$ to be the subspace of $X \times E$ where $(x, v) \in E_f$ 
+if $f(x) = \pi(v)$. 
+
+_Proof that $E_f$ is a well defined vector bundle_ 
+
+Let us check that this is a vector bundle over $X$. Indeed $\pi_f^{-1}(x) = \{ (x, v) \mid \pi(v) = f(x)\}$ i.e. consists of the fiber over $f(x)$ in $E$,
+hence this space naturally inherits a vector space structure over its fibers. It remains to check that this space admits a local trivialization.
+
+Let $x \in X$ and let $U \subset Y$ be a neighborhood of $f(x)$ such that there exists a local trivialization $h: \pi^{-1}(U) \rightarrow U \times \mathbb{R}^n$.
+Now let us notice that $V = f^{-1}(U)$ is an open neighborhood of $x$ and now let us define the map $\Psi: V \times \mathbb{R}^n \rightarrow \pi^{-1}(V)$
+by $(v, c) \mapsto (v, h^{-1}(f(x), v))$. Clearly this map is continuous and bijective in the first factor and by the fact that $h$ is a local trivialization we see thata in the 
+second factor $\Psi$ is a linear isomorphism on each fiber and continuous, hence $\Psi$ defines a local trivialization on $V$ and hence we see that $E_f$ is a well defined vector bundle. $\square$
+
 Heegaard-Floer homology
 ===============================================================================
 
