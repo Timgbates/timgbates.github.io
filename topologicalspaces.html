@@ -103,17 +103,20 @@ __Theorem__
 The following proof is due to Hans Samelson.
 
 _Proof_
-    A non-orientable hypersurface is a codimension 1 submanifold of $\mathbb{R}^n$ which is closed (as a subset), without boundary, and non-orientable. Suppose that such a hypersurface $H$ did exist. Then we may find a loop on $H$ such that the normal vector pushed smoothly along this loop returns back to itself with the opposite orientation. By placing a point on the normal pushed off of $H$ and transporting it via the loop on $H$ and then connecting the two ends via the normal going through $H$ we obtain a new smooth closed path $\gamma \subset \mathbb{R}^n$ such that $\gamma$ meets $H$ at a single point. Since $\mathbb{R}^n$ is contractible, we can find a smoothly embedded disk $D \hookrightarrow \mathbb{R}^n$ whose boundary is $\gamma$. By the transversality theorem, we can take this disk to be transverse to $H$ and hence $H \cap D$ will consist of finitely many closed loops in the interior of $D$ and a finite collection of arcs which have their end points on the boundary of $D$. However, the end points of these arcs must be distinct which tells us that $\partial D \cap H$ must consist of an even number of points, but we know that $\partial D \cap H$ consists of a single point, hence we have reached a contradiction. $\square$
+    A non-orientable hypersurface is a codimension 1 submanifold of $\mathbb{R}^n$ which is closed (as a subset), without boundary, and non-orientable. 
+    Suppose that such a hypersurface $H$ did exist. Then we may find a loop on $H$ such that the normal vector pushed smoothly along this loop returns back to itself with the opposite orientation. 
+    By placing a point on the normal pushed off of $H$ and transporting it via the loop on $H$ and then connecting the two ends via the normal going through $H$ we obtain a new smooth closed path $\gamma \subset \mathbb{R}^n$ such that $\gamma$ meets $H$ at a single point. Since $\mathbb{R}^n$ is contractible, we can find a smoothly embedded disk $D \hookrightarrow \mathbb{R}^n$ whose boundary is $\gamma$. 
+    By the transversality theorem, we can take this disk to be transverse to $H$ and hence $H \cap D$ will consist of finitely many closed loops in the interior of $D$ and a finite collection of arcs which have their end points on the boundary of $D$. However, the end points of these arcs must be distinct which tells us that $\partial D \cap H$ must consist of an even number of points, but we know that $\partial D \cap H$ consists of a single point, hence we have reached a contradiction. $\square$
 
 As a corollary, we see that projective planes and Klein bottles may never be smoothly embedded into $\mathbb{R}^3$. 
 
 __Proposition__ The complement of a closed codimension one smooth submanifold of $\mathbb{R}^n$ is disconnected. 
 
-_Proof_ First by the previous theorem we know that such a submanifold is orientable and by the tubular neighborhood theorem, we know that 
-this submanifold admits a tubular neighborhood that we identify as its normal bundle. We know that the normal bundle is locally trivial, then wlog let us choose two points $p$ and $q$ locally on opposite sides of $M$ (that is they live
+_Proof_ By the tubular neighborhood theorem, we know that this submanifold admits a tubular neighborhood that we identify as its normal bundle. We know that the normal bundle is locally trivial, then wlog let us choose two points $p$ and $q$ locally on opposite sides of $M$ (that is they live
 in the same fiber of the tubular neighborhood). There is a unique segment $\alpha$ identified as the vectors in the fiber connecting them. Now assuming that the complement is connected, we can find a 
 smooth curve $\gamma \subset \mathbb{R}^n \backslash M$ connecting $p$ and $q$, then by the fact that $\mathbb{R}^n$ is simply connected, there exists a smooth disk $D$
-with boundary $ \partial D = \gamma \cup \alpha$ and by the same argument as in the previous theorem we reach a contradiction. $\square$. 
+with boundary $ \partial D = \gamma \cup \alpha$ and by transversality $D$ can be taken to be transverse to $M$ but as in the argument of the previous theorem
+ we realize that the number of points in $\partial D \cap M$ has the wrong parity and hence we reach a contradiction. $\square$. 
 
 
 
