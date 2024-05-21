@@ -471,6 +471,11 @@ The first task of the theory is to produce some first examples. Clearly $X \time
 We can cook up an example of a nontrivial example of a bundle by taking the space $I \times \mathbb{R}/ \sim$ where $(0, v) \sim (1, -v)$. This 
 is a vector bundle over $S^1$ and is called the Mobius bundle. If we restrict this bundle to the set $(p, v)$ with $ |v| \leq 1$, then this space has connected boundary whereas $S^1 \times [-1,1]$ has disconnected boundary.
 
+
+__Definition__ _A section of a vector bundle $E \rightarrow B$ is a map $\sigma: B \rightarrow E$ such thata $\pi \circ \sigma = 1_B$._
+
+
+
 __Theorem__ _A rank n vector bundle $E$ admits n linearly independent sections if and only if $E$ is isomorphic to the trivial rank n bundle._
 
 This gives us a second proof that the Mobius bundle is nontrivial, for any section must have positive and negative vectors and then the intermediate value theorem 
@@ -495,10 +500,6 @@ Let $x \in X$ and let $U \subset Y$ be a neighborhood of $f(x)$ such that there 
 Now let us notice that $V = f^{-1}(U)$ is an open neighborhood of $x$ and now let us define the map $\Psi: V \times \mathbb{R}^n \rightarrow \pi^{-1}(V)$
 by $(v, c) \mapsto (v, h^{-1}(f(x), v))$. Clearly this map is continuous and bijective in the first factor and by the fact that $h$ is a local trivialization we see thata in the 
 second factor $\Psi$ is a linear isomorphism on each fiber and continuous, hence $\Psi$ defines a local trivialization on $V$ and hence we see that $E_f$ is a well defined vector bundle. $\square$
-
-
-__Definition__ _A section of a vector bundle $E \rightarrow B$ is a map $\sigma: B \rightarrow E$ such thata $\pi \circ \sigma = 1_B$._
-
 
 
 
