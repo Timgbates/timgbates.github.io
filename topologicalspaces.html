@@ -448,23 +448,11 @@ Kirby Diagrams and Elementary Kirby Calculus
 Vector Bundles
 ===============================================================================
 
-Let $X$ be a topological space, then a vector bundle $(E, X, \pi)$ is a triple consisting of a continuous map $\pi: E \rightarrow X$ where $E$ is called the total space of the vector bundle
-such that $\pi^{-1}(x)$ is a vector space and such that for all $x \in X$, there exists an open neighborhood $U \ni x$ such that 
-$$
-\require{tikz-cd}
-\pi^{-1}(U)\arrow{dr}{\pi} \arrow{rr}{\cong} & & U \times k^n \arrow{dl}{p} \\
-& U 
-$$
-commutes
+__Definition__ 
+_A vector bundle $\xi = (E, X, \pi)$ is a triple consisting of topological spaces $E$ and $X$ together with a continuous map $\pi: E \rightarrow X$ such that $\pi^{-1}(x)$ is a vector space and such that for all $x \in X$, there exists an open neighborhood $U \ni x$ and homeomorphisms $h: \pi^{-1}(U) \rightarrow U \times \mathbb{F}^n$
+such that $h|_{\pi^{-1}(x')}$ is a linear isomorphism for all $x' \in U$._
 
-$$
-\require{AMScd} 
-\begin{cd}
-\pi^{-1}(U) {_{\rlap{\ g\circ f}}\style{display: inline-block; transform: rotate(30deg)} @>>> U \times k^n 
-\end{cd}
-$$
-
-
+$E$ is typically refered to as the total space of the vector bundle, while $X$ is often called the base space. When it is understood, often we refer to the vector bundle via its total space i.e. $E$ instead of $\xi$.
 
 
 
