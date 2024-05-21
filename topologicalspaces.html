@@ -502,6 +502,14 @@ by $(v, c) \mapsto (v, h^{-1}(f(x), v))$. Clearly this map is continuous and bij
 second factor $\Psi$ is a linear isomorphism on each fiber and continuous, hence $\Psi$ defines a local trivialization on $V$ and hence we see that $E_f$ is a well defined vector bundle. $\square$
 
 
+All of our favorite ways to build vector spaces also let us build vector bundles. Let $E$ and $F$ be vector bundles over the same base space $X$, then 
+
+
+- $E \oplus F$ is the vector bundle whose fibers are direct sums $E_x \oplus F_x$. 
+- $E \otimes F$ is the vector bundle whose fibers are tensor products $E_x \otimes F_x$. 
+- $Hom(E, F)$ is the vector bundle whose fibers are the vector spaces of linear maps from $E_x$ to $F_x$.
+
+__Theorem__ Let $E$ and $F$ be vector bundles over $X$, then there is a bundle isomorphism $E \otimes F^* \cong Hom(E, F)$.
 
 
 Heegaard-Floer homology
