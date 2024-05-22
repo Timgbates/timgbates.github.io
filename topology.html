@@ -73,65 +73,23 @@ background-size: cover;
       background-color:rgb(100, 139, 211);
     }
 </style>
-<script>
-  function parallax_height() {
-  var scroll_top = $(this).scrollTop();
-  var sample_section_top = $(".sample-section").offset().top;
-  var header_height = $(".sample-header-section").outerHeight();
-  $(".sample-section").css({ "margin-top": header_height });
-  $(".sample-header").css({ height: header_height - scroll_top });
-}
-parallax_height();
-$(window).scroll(function() {
-  parallax_height();
-});
-$(window).resize(function() {
-  parallax_height();
-});
-</script>
-
-
 
 <body>
-  <div class="sticky">
   <div class="topnav">
     <a href="https://timgbates.github.io/topology.html">Topology</a>
     <a href="https://timgbates.github.io">Main</a>
     <a href="https://timgbates.github.io/topologicalspaces.html">Topological Spaces</a>
   
   </div>
+<br>
 
-    <div class="image">
-      <br>
-      <br>
-      <p class="header">Topology</p>
-      <br>
-      <br>
-      <br>
-      <br>
-    </div>
-  </div>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-  <div class="main">
-    <div class="sample-section-wrap">
-      <div class="sample-section">
  <h1>Topology </h1>
-<p>
+
+
+ <meta charset="utf-8" emacsmode="-*- markdown -*-"><link rel="stylesheet" href="https://casual-effects.com/markdeep/latest/slate.css?">
+
+
+ 
 Low-dimensional topology is the study of 3 and 4 dimensional manifolds, and their topological (and sometimes geometric) properties. 
 An important branch of this field is the study of knots and links, which are smooth embeddings of disjoint copies of the circle into the 3-sphere. The central question of knot theory is the classification of knots and links up to isotopy.
 This question is largely intractible, so knot theories turn their attention to finding invariants of knots/links which help distinguish knots while also telling us something useful about the geometry of the knot or link. 
@@ -141,7 +99,7 @@ One role is the connection of the degree of this polynomial (the Newton Polytope
 
 
 
-</p>
+
 <p>To see more details about this project, see the following <a href="https://timgbates.github.io/ThurstonPolytopes.html">page</a>>. </p>
 
 <p><a href="https://timgbates.github.io/nil.html">Nil Geometry</a></p>
@@ -151,34 +109,29 @@ One role is the connection of the degree of this polynomial (the Newton Polytope
   <li><a href="https://timgbates.github.io/document/Latticecohomologynotes.pdf">Introduction to Lattice Cohomology</a></li>
 </ul>
 
-<h2>Useful Links (pun intended)</h2>
-<ul>
-  <li><a href="http://katlas.org/wiki/The_Thistlethwaite_Link_Table">Link Tables</a></li>
-  <li><a href="https://snappy.computop.org/">Snappy</a></li>
-  <li><a href="https://regina-normal.github.io/">Regina</a></li>
-  <li><a href="https://www.maths.dur.ac.uk/users/dirk.schuetz/knotjob.html">Knot Job</a></li>
-  <li><a href="https://wildtopology.com/">Wild Topology</a></li>
-  <li><a href="https://nmd.web.illinois.edu/computop">ComputoTop</a></li>
-  <li><a href="https://web.mst.edu/~continua/">Continua Problem List</a></li>
-  <li><a href="https://pi.math.cornell.edu/~hatcher/">Hatcher</a></li>
+Useful Links
+------------------------------------------------------------
+
+  - <a href="http://katlas.org/wiki/The_Thistlethwaite_Link_Table">Link Tables</a></li>
+  - <a href="https://snappy.computop.org/">Snappy</a></li>
+  - <a href="https://regina-normal.github.io/">Regina</a></li>
+  - <a href="https://www.maths.dur.ac.uk/users/dirk.schuetz/knotjob.html">Knot Job</a></li>
+  - <a href="https://wildtopology.com/">Wild Topology</a></li>
+  - <a href="https://nmd.web.illinois.edu/computop">ComputoTop</a></li>
+  - <a href="https://web.mst.edu/~continua/">Continua Problem List</a></li>
+  - <a href="https://pi.math.cornell.edu/~hatcher/">Hatcher</a></li>
 </ul>
 
-<h2>Some nice articles and papers (not by me)</h2>
-<li><a href="https://www.wcupa.edu/sciences-mathematics/mathematics/jBrazas/documents/Constructing_arcs_from_paths_9-9-21.pdf">A proof by Jeremy Brazas that path connected Hausdorff spaces are Arc-Wise connected</a></li>
-<li><a href="https://www.math.brown.edu/mchan2/2019Spring_2520/StudentPresentations/Siddarth_Blowups.pdf">An Intro to Blow Ups by Siddarth Kannan</a></li>
-<li><a href="http://www.ams.org/publicoutreach/feature-column/fc-2017-08">Intro to Tangles</a></li>
-<h2>Cool open Problems in Knot Theory and LDT</h2>
-<li><a href="https://en.wikipedia.org/wiki/Crossing_number_(knot_theory)">Additivity of Crossing Number</a></li>
-<li>Cosmetic Crossing Problem</li>
-<li>L-Space Conjecture</li>
-<li>11/8-Conjecture</li>
-<li>Smooth Poincare Conjecture in 4D</li>
-<li>Existence of Exotic smooth structures on $S^2\times S^2$</li>
-<li></li>
+Some nice articles and papers (not by me)
+------------------------------------------------------------
+- <a href="https://www.wcupa.edu/sciences-mathematics/mathematics/jBrazas/documents/Constructing_arcs_from_paths_9-9-21.pdf">A proof by Jeremy Brazas that path connected Hausdorff spaces are Arc-Wise connected</a></li>
+- <a href="https://www.math.brown.edu/mchan2/2019Spring_2520/StudentPresentations/Siddarth_Blowups.pdf">An Intro to Blow Ups by Siddarth Kannan</a></li>
+- <a href="http://www.ams.org/publicoutreach/feature-column/fc-2017-08">Intro to Tangles</a></li>
 
-</div>
-</div>
-</div>
+
+
+<!-- Markdeep: --><style class="fallback">body{visibility:hidden;white-space:pre;font-family:monospace}</style><script src="markdeep.min.js" charset="utf-8"></script><script src="https://morgan3d.github.io/markdeep/latest/markdeep.min.js?" charset="utf-8"></script><script>window.alreadyProcessedMarkdeep||(document.body.style.visibility="visible")</script>
+
 </body>
 
 </html>
