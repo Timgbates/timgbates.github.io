@@ -532,6 +532,11 @@ All of our favorite ways to build vector spaces also let us build vector bundles
 If $F$ is the trivial one dimensional bundle over $X$, then $Hom(E, \varepsilon^1)$ is called the dual bundle of $E$.  
 Notice that if $E$ can be equipped with a metric, then we can find an isomorphism from $E^*$ to $E$. 
 
+_Proof_ A finite dimensional vector space equipped with an orthonormal basis $\{e_1, e_2, \dots , e_n\}$ can be identified with 
+the dual space by the map $v  = a_1 e_1 + a_2 e_2 + \dots + a_n e_3 \mapsto a_1 \epsilon^1 + \dots + a_n \epsilon^n$ where $\epsilon_i  \in Hom(V, \mathbb{R})$ is 
+characterized by $\epsilon_i( v) = a_i$. Now let us call this isomorphism $h$. Now since we can equip $E$ with a metric, we can equip each fiber 
+with an orthonormal frame which varies continuously, then we can define the map $H : E \rightarrow E^*$ defined by $h$ on each fiber.
+This map is continuous and an isomorphism on each fiber, thus we obtain a vector bundle isomorphism from $E$ to $E^*$. $\square$.  
 
 __Theorem__ Let $E$ and $F$ be vector bundles over $X$, then there is a bundle isomorphism $E^* \otimes F \cong Hom(E, F)$.
 
