@@ -530,6 +530,35 @@ _Proof_ Let $V$ and $W$ be finite dimensional vector spaces. Recall that there i
 $v^* \otimes w (\cdot) \mapsto v^*(\cdot) w$. It remains to show that we can find a continuous map of vector bundles such that the restriction to 
 the fibers recovers this isomorphism. 
 
+Thom Isomorphism Theorem
+-------------------------------------------------------------------------------
+
+
+
+
+Stiefel-Whitney Classes
+-------------------------------------------------------------------------------
+
+__Definition__ Let $\xi = (E, B , \pi)$ be a real vector bundle and let $\Phi : H^k(B; \mathbb{Z}_2) \rightarrow H^{n+k}(E,E_0 ; \mathbb{Z}_2)$ be the Thom isomorphism,
+and $u \in H^n(E,E_0;\mathbb{Z}_2)$ the Thom class, then the $k$th Stiefel-Whitney class is defined as 
+$$
+w_k(\xi) = \Phi^{-1}(Sq^k(u))
+$$
+where $Sq^k$ is the kth Steenrod Square. $w(\xi) = 1 + w_1(\xi) + \dots + w_n(\xi)$. 
+
+Our goal now will be to show that this definition implies the following four axioms which characterize the Stiefel-Whitney classes:
+
+1. $w_0(\xi) = 1$ and $w_i(\xi) = 0$ whenever $i$ is greater than the fiber dimension. 
+2. (naturallity) Let $f : X \rightarrow Y$ be a continuous map which passes to a bundle map $E \rightarrow E'$, then $w_k(E) = f^*(w_k(E'))$
+3. (Whitney Sum) Let $E$ and $F$ be two vector bundles over $B$, then 
+$$
+w_k(E \oplus F) = \sum_{i+j = k} w_i(E) \smile w_j(F)
+$$
+4. $w(\gamma^1_1) \neq 1$. 
+
+
+
+
 
 Heegaard-Floer homology
 ===============================================================================
