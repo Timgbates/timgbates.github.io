@@ -558,12 +558,15 @@ by $\pi^{-1*}$ .
 
 
 
-__Theorem__ There exists a long exact sequence defined by 
+__Theorem__ There exists a long exact sequence 
 $$
 \begin{CD}
 \longrightarrow H^j(B) @>{\smile e(\xi) }>> H^{j+n}(B) @>{\pi^*_0}>> H^{j+n}(E_0) @>{}>> H^{j+1}(B) \longrightarrow 
 \end{CD}
 $$
+called the Gysin sequence. 
+
+
 
 Stiefel-Whitney Classes
 -------------------------------------------------------------------------------
@@ -578,7 +581,7 @@ where $Sq^k$ is the kth Steenrod Square. $w(\xi) = 1 + w_1(\xi) + \dots + w_n(\x
 Our goal now will be to show that this definition implies the following four axioms which characterize the Stiefel-Whitney classes:
 
 1. $w_0(\xi) = 1$ and $w_i(\xi) = 0$ whenever $i$ is greater than the fiber dimension. 
-2. (naturallity) Let $f : X \rightarrow Y$ be a continuous map which passes to a bundle map $E \rightarrow E'$, then $w_k(E) = f^*(w_k(E'))$
+2. (naturality) Let $f : X \rightarrow Y$ be a continuous map which passes to a bundle map $E \rightarrow E'$, then $w_k(E) = f^*(w_k(E'))$
 3. (Whitney Sum) Let $E$ and $F$ be two vector bundles over $B$, then 
 $$
 w_k(E \oplus F) = \sum_{i+j = k} w_i(E) \smile w_j(F)
