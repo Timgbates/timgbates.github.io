@@ -459,14 +459,14 @@ __Definition__
 _A vector bundle $\xi = (E, X, \pi)$ is a triple consisting of topological spaces $E$ and $X$ together with a continuous map $\pi: E \rightarrow X$ such that $\pi^{-1}(x)$ is a vector space and such that for all $x \in X$, there exists an open neighborhood $U \ni x$ and homeomorphisms $h: \pi^{-1}(U) \rightarrow U \times \mathbb{F}^n$
 such that $h|_{\pi^{-1}(x')}$ is a linear isomorphism for all $x' \in U$._
 
-$E$ is typically refered to as the total space of the vector bundle, while $X$ is often called the base space. When it is understood, often we refer to the vector bundle via its total space i.e. $E$ instead of $\xi$.
+$E$ is typically refered to as the total space, while $X$ is called the base space. When it is understood, often we refer to the vector bundle via its total space i.e. $E$ instead of $\xi$.
 
 
 
 
 
 
-__Definition__ Two vector bundles $E$ and $E'$ over $B$ are said to be equivalent if there exists a homeomorphism which is a linear isomorphism on each fiber.
+__Definition__ Two vector bundles $E$ and $E'$ over $B$ are said to be equivalent if there exists a homeomorphism $E \rightarrow E'$ which restricts to a linear isomorphism on each fiber.
 
 
 
@@ -479,7 +479,15 @@ We can cook up an example of a nontrivial example of a bundle by taking the spac
 is a vector bundle over $S^1$ and is called the Mobius bundle. If we restrict this bundle to the set $(p, v)$ with $ |v| \leq 1$, then this space has connected boundary whereas $S^1 \times [-1,1]$ has disconnected boundary.
 
 
-__Definition__ _A section of a vector bundle $E \rightarrow B$ is a map $\sigma: B \rightarrow E$ such thata $\pi \circ \sigma = 1_B$._
+__Definition__ _A section of a vector bundle $E \rightarrow B$ is a map $\sigma: B \rightarrow E$ such thata $\pi \circ \sigma = 1_B$. $\Gamma(E)$ refers to the sapce of 
+sections of $E$._
+
+If $E = B \times V$ is the trivial bundle, then a section is merely a continuous map from $B$ to $V$. Similarly, if $ f : B \rightarrow V$ is 
+continuous, then we can construct a section $\sigma : B \rightarrow E$ defined by $f \mapsto (-, f(-))$. From this point of view a section is a generalization of the 
+space $C(B, V)$. 
+
+__Theorem__ If $Y \subset B$ is closed and $B$ is paracompact (admits partitions of unity) then for a vector bundle $E$ over $B$, the restriction map $\Gamma(E) \rightarrow \Gamma(E|_Y)$ is surjective. 
+
 
 
 
@@ -494,7 +502,7 @@ Construcing Vector Bundles
 
 
 
-__Definition__ Let $f: X \rightarrow Y$ be continuous and let $E \overset{\pi} Y$ be a vector bundle, then 
+__Definition__ Let $f: X \rightarrow Y$ be continuous and let $E \overset{\pi}{\rightarrow} Y$ be a vector bundle, then 
 define the pullback bundle $E_f \overset{\pi_f}{\rightarrow} X$ to be the subspace of $X \times E$ where $(x, v) \in E_f$ 
 if $f(x) = \pi(v)$. 
 
@@ -534,6 +542,14 @@ _Proof_ Let $V$ and $W$ be finite dimensional vector spaces. Recall that there i
 $v^* \otimes w (\cdot) \mapsto v^*(\cdot) w$. It remains to show that we can find a continuous map of vector bundles such that the restriction to 
 the fibers recovers this isomorphism. 
 
+
+__Theorem__ _Let $E$ be a vector bundle over $B \times [0,1]$, then the bundle $E|_0 = \{ ((b, 0), v) \in E\}$ and $E|_1 = \{ ((b,1), v) \in E\}$ are 
+isomorphic as vector bundles._
+
+
+__Corollaray__ Let $f_0, f_1 : X \rightarrow Y$ be homotopic, and let $E \rightarrow Y$ be a vector bundle, then $f_0^*(E) \cong f_1^*(E)$. 
+_Proof_ Let $F : [0,1] \times X \rightarrow Y$ be a homotopy between $f_0$ and $f_1$. Then the bundle $F^*(E)$ restricted to $0 \times X$ 
+and $1 \times X$ respectively are the bundles $f_0^*(E)$ and $f_1^*(E)$, so by the previous theorem they must be isomorphic. 
 
 
 
@@ -603,7 +619,7 @@ and thus $w(\gamma_1^1) \neq 0$.
 
 
 
-Lastly, the Stiefel Whitney class of a smooth manifold M written $w(M)$ is simply the Stiefel-Whitney class of its tangent bundle. 
+Lastly, the Stiefel Whitney class of a smooth manifold M written $w(M)$ is simply the Stiefel-Whitney class of its tangent bundle.
 
 Pontrjagin Classes
 -------------------------------------------------------------------------------
