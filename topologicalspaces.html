@@ -446,6 +446,23 @@ each disk bundle has a distinct Euler number. A plumbed 4-manifold consists of a
 Intersection Forms
 -------------------------------------------------------------------------------
 
+
+__Lemma__ _Let $Q$ be a unimodular form on $\mathbb{Z}^n$, then if $v \in \mathbb{Z}^n$ is primitive i.e. $v = kv'$ implies $ k = \pm 1$,
+then there exists a dual element $w$ such that $Q(v,w) = 1$._
+
+_Proof_ Let $A$ denote the matrix representation of $Q$ so that (in some basis) $Q(x,y) = x^T A y$. Then since $Q$ is unimodular 
+$A$ is invertible over $\mathbb{Z}$. Notice that $Av$ is primitive since $v = A^{-1}(Av) = A^{-1}(kw) = k A^{-1}w$ implies $ k = \pm 1$. 
+Now $Av = (\alpha_1, \dots , \alpha_n)$ is some primitive element in $\mathbb{Z}^n$ if and only if (\alpha_1, \dots , \alpha_n) = 1$. 
+Since $\mathbb{Z}$ is a Bezout domain the equation 
+$$
+\alpha_1 x_1 + \alpha_2 x_2 + \dots + \alpha_n x_n = 1
+$$
+has an integral solution. This solution $w = (x_1, \dots , x_n)$ is the desired dual element. $\square$ 
+
+The geometric interpretation is that for any surface $\Sigma$ representing a primitive class in $H_2(X)$, there exists a dual surface $\Sigma'$ 
+with algebraic intersection number $1$. 
+
+
 Kirby Diagrams and Elementary Kirby Calculus
 -------------------------------------------------------------------------------
 
@@ -626,6 +643,28 @@ and thus $w(\gamma_1^1) \neq 0$.
 
 Lastly, the Stiefel Whitney class of a smooth manifold M written $w(M)$ is simply the Stiefel-Whitney class of its tangent bundle.
 
+
+
+Notice that the total Stiefel Whitney class of a manifold $w(M) = 1 + w_1(M) + \dots + w_n(M)$ is a unit in the ring $H^{\prod}(M;\mathbb{Z}_2)$ 
+of formal power series $1 + a_1 + a_2 + \dots$ with $a_i \in H^i(M;\mathbb{Z}_2)$. Let E and F be vector bundles over a space $B$ such that $E \oplus F = \varepsilon^N$ is trivial,
+then $w(E) w(F) = 1$ so we can solve for $w(F)$ in terms of $w(E)$ by $w(F) = \overline{w(E)}$ where $\overline{w(E)}$ denotes the inverse element in the ring $H^{\prod}(M;\mathbb{Z}_2)$. 
+
+This yields an obstruction for a manifold embedding into $\mathbb{R}^N$.
+
+
+__Definition__ (Normal Bundle) Let $M^k \hookrightarrow N^n$ be a smooth immersion, then $\nu(M)$ is the pullback of the subbundle of $TN^n|_{f(M)}$ consisting
+of vectors $(f(x), v)$ with $v \cdot w = 0$ for all $w \in f_* TM$.
+
+The normal bundle is well defined for smooth immersions by the injectivity of $f_*$ on $TM$. 
+
+__Proposition__ Let $M^k \overset{f}{\hookrightarrow} \mathbb{R}^n$ be a smooth embedding, then $TM \oplus \nu(M) = \varepsilon^n$ is trivial. 
+
+_Proof_ Notice that $f_* TM \subset T\mathbb{R}^n|_{f(M)}$ and that its complement is the normal bundle $\nu(M)$ so that $TM \oplus \nu(M) = f^*( T\mathbb{R}^n|_{f(M)})$. $\square$ 
+
+
+
+
+
 Pontrjagin Classes
 -------------------------------------------------------------------------------
 
@@ -646,6 +685,14 @@ Universal Spaces
 
 __Theorem__ Let $\gamma^n$ be the tautological n-frame bundle over $Gr_n(\mathbb{R}^{\infty})$, then 
 there is a bijection $[X, Gr_n(\mathbb{R}^n)] \cong \textrm{Vect}^n(X)$ defined by $f \mapsto f^*(\gamma^n)$. 
+
+
+
+
+
+
+
+
 
 Vector bundles are thus classified by homotopy classes of 
 maps to the space $Gr_n(\mathbb{R}^{\infty})$ we we alternatively write as $BO(n)$ and call the classifying space for real vector bundles. 
