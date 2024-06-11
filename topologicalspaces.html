@@ -487,15 +487,6 @@ __Definition__ Two vector bundles $E$ and $E'$ over $B$ are said to be equivalen
 
 
 
-
-
-
-
-The first task of the theory is to produce some first examples. Clearly $X \times \mathbb{R}^n$ is a vector bundle and is refered to as the trivial rank-n bundle.
-We can cook up an example of a nontrivial example of a bundle by taking the space $I \times \mathbb{R}/ \sim$ where $(0, v) \sim (1, -v)$. This 
-is a vector bundle over $S^1$ and is called the Mobius bundle. If we restrict this bundle to the set $(p, v)$ with $ |v| \leq 1$, then this space has connected boundary whereas $S^1 \times [-1,1]$ has disconnected boundary.
-
-
 __Definition__ _A section of a vector bundle $E \rightarrow B$ is a map $\sigma: B \rightarrow E$ such thata $\pi \circ \sigma = 1_B$. $\Gamma(E)$ refers to the sapce of 
 sections of $E$._
 
@@ -692,6 +683,16 @@ H^n(B ; \mathbb{Z} ) @>>> H^n(B;\mathbb{Z}_2)
 \end{CD}
 $$
 and notice that the Thom isomorphism maps $ e(\xi) = u|_E$ to $u|_E \smile u = u \smile u = Sq^n(u)$ so that after reducing mod 2, the class $\Phi^{-1}(u \smile u  \mod 2) = w_n(\xi)$. 
+
+Complex Vector Bundles
+-------------------------------------------------------------------------------
+
+Complex vector bundles have some further peculiarities which make them stand out from the real case. 
+
+__Theorem (Splitting Principle)__ Let $E \rightarrow B$ be a complex vector bundle with B paracompact, then there exists a space $A$ and a continuous map $f : A \rightarrow B$ such 
+that $f^*(E) = L_1 \oplus L_2 \oplus \dots \oplus L_n$ splits along line bundles and furthermore that the map $f^* : H^*(B) \rightarrow H^*(A)$ is injective.  
+
+
 
 Chern Pontrjagin Classes
 -------------------------------------------------------------------------------
