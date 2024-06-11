@@ -693,10 +693,14 @@ H^n(B ; \mathbb{Z} ) @>>> H^n(B;\mathbb{Z}_2)
 $$
 and notice that the Thom isomorphism maps $ e(\xi) = u|_E$ to $u|_E \smile u = u \smile u = Sq^n(u)$ so that after reducing mod 2, the class $\Phi^{-1}(u \smile u  \mod 2) = w_n(\xi)$. 
 
-Pontrjagin Classes
+Chern Pontrjagin Classes
 -------------------------------------------------------------------------------
 
+__Proposition__ The map $\otimes \mathbb{Z}_2$ takes the Chern classes $c_i(\xi)$ to the Stiefel Whitney classes. 
 
+_Proof_ Recall that this map sends the Euler class of a bundle $e(\xi)$ to the top Stiefel-Whitney class. Since $c_n(\xi) = e_{2n}(\xi)$, we 
+see already that this result is true for the top Chern and Stiefel-Whitney classes. For $i < n$, notice that in the Gysin sequence 
+$H^i(B) \rightarrow H^i(E_0)$ is an isomorphism, so that we see $e( \omega_0) \mapsto w_{n-1}(\omega_0) = w_{n-1}(E)$. Continuing inductively the result follows. $\square$. 
 
 Here is a cute application of Pontrjagin numbers.
 
