@@ -448,6 +448,35 @@ Intersection Forms
 -------------------------------------------------------------------------------
 
 !!!
+    __Definition__ Let $X$ be a closed orientable 4-manifold. Define $Q_X : H^2(X;\mathbb{Z}) \times H^2(X ; \mathbb{Z})\rightarrow \mathbb{Z}$ to be the 
+    symmetric bilinear where $Q_X(\alpha , \beta) = \left< (\alpha \cup \beta) , [M] \right>$. $Q_X$ is called the intersection form, and notice that 
+    since $H_2(X ; \mathbb{Z}) \cong H^2(X ; \mathbb{Z})$ by Poincare duality, we can also define $Q_X : H_2(X ; \mathbb{Z}) \times H_2(X ; \mathbb{Z}) \rightarrow \mathbb{Z}$. 
+
+We need to justify the name _intersection form_ . First is the following useful lemma
+
+!!! 
+    __Theorem__ Let $X$ be a smooth closed orientable 4-manifold. 
+    Let $\alpha \in H_2(X ; \mathbb{Z})$, then $\alpha = [\Sigma]$ for some embedded surface $\Sigma \subset X$. 
+
+
+We can then show that $Q_X(\alpha, \beta)$ records the algebraic signed intersection number of $\Sigma_{\alpha}$ and $\Sigma_{\beta}$. 
+
+__Proposition__ $Q_X$ is unimodular. 
+
+_Proof_ Without loss of generality let $H_2(X;\mathbb{Z})$ be torsion free. 
+We need to show that for any the map $ \alpha \mapsto Q(\alpha^*, -)$ is an isomorphism from $H_2(X)$ to $H^2(X)$. Indeed this map can be written down 
+as $\alpha \mapsto \alpha^* \cup - $ 
+
+
+!!!
+    The following are invariants of unimodular forms: 
+    - The rank of $Q_X$ is an invariant which is equal to the second betti number $b_2(X)$. 
+    - The signature of $Q_X$ is defined as the difference of positive and negative Eigenvalues over the real symmetric bilinear form $Q_X \otimes \mathbb{R}$.
+      The number of positive (negative) eigenvalues is written $b_2^+(X)$ ( $b_2^-(X)$ )
+    - The 
+
+
+!!!
     __Lemma__ _Let $Q$ be a unimodular form on $\mathbb{Z}^n$, then if $v \in \mathbb{Z}^n$ is primitive i.e. $v = kv'$ implies $k = \pm 1$,
     then there exists a dual element $w$ such that $Q(v,w) = 1$._
 
