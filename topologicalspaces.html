@@ -613,7 +613,7 @@ called the Gysin sequence.
 Stiefel-Whitney Classes
 -------------------------------------------------------------------------------
 
-__Definition__ Let $\xi = (E, B , \pi)$ be a real vector bundle and let $\Phi : H^k(B; \mathbb{Z}_2) \rightarrow H^{n+k}(E,E_0 ; \mathbb{Z}_2)$ be the Thom isomorphism,
+> __Definition__ Let $\xi = (E, B , \pi)$ be a real vector bundle and let $\Phi : H^k(B; \mathbb{Z}_2) \rightarrow H^{n+k}(E,E_0 ; \mathbb{Z}_2)$ be the Thom isomorphism,
 and $u \in H^n(E,E_0;\mathbb{Z}_2)$ the Thom class, then the kth Stiefel-Whitney class is defined as 
 $$
 w_k(\xi) = \Phi^{-1}(Sq^k(u))
@@ -692,6 +692,13 @@ Complex vector bundles have some further peculiarities which make them stand out
 __Theorem (Splitting Principle)__ Let $E \rightarrow B$ be a complex vector bundle with B paracompact, then there exists a space $A$ and a continuous map $f : A \rightarrow B$ such 
 that $f^*(E) = L_1 \oplus L_2 \oplus \dots \oplus L_n$ splits along line bundles and furthermore that the map $f^* : H^*(B) \rightarrow H^*(A)$ is injective.  
 
+_Proof_ Let $\mathbb{P}(E) = \{ \ell \in F_b \subset E \}$ be the projectivization of E i.e. the fiber bundle over B where the fiber consists of the space of lines of the fiber of E. 
+
+It is easy to verify that this is a fiber bundle (local triviallity). There is also a surjection $H^*(\mathbb{CP}^{n-1}) \rightarrow H^*(F_b(\mathbb{P}(E)))$ on each fiber 
+which allows us to apply the Leray-Hirsh theorem.  
+
+
+A similar theorem (and proof) states the same for real vector bundles with $\mathbb{Z}_2$ coefficients in the cohomology ring. 
 
 
 Chern Pontrjagin Classes
