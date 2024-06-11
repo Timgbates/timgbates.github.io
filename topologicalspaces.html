@@ -446,9 +446,9 @@ each disk bundle has a distinct Euler number. A plumbed 4-manifold consists of a
 Intersection Forms
 -------------------------------------------------------------------------------
 
-
-__Lemma__ _Let $Q$ be a unimodular form on $\mathbb{Z}^n$, then if $v \in \mathbb{Z}^n$ is primitive i.e. $v = kv'$ implies $ k = \pm 1$,
-then there exists a dual element $w$ such that $Q(v,w) = 1$._
+!!!
+    __Lemma__ _Let $Q$ be a unimodular form on $\mathbb{Z}^n$, then if $v \in \mathbb{Z}^n$ is primitive i.e. $v = kv'$ implies $ k = \pm 1$,
+    then there exists a dual element $w$ such that $Q(v,w) = 1$._
 
 _Proof_ Let $A$ denote the matrix representation of $Q$ so that (in some basis) $Q(x,y) = x^T A y$. Then since $Q$ is unimodular 
 $A$ is invertible over $\mathbb{Z}$. Notice that $Av$ is primitive since $v = A^{-1}(Av) = A^{-1}(kw) = k A^{-1}w$ implies $ k = \pm 1$. 
@@ -472,9 +472,10 @@ Kirby Diagrams and Elementary Kirby Calculus
 Vector Bundles
 ===============================================================================
 
-__Definition__ 
-_A vector bundle $\xi = (E, X, \pi)$ is a triple consisting of topological spaces $E$ and $X$ together with a continuous map $\pi: E \rightarrow X$ such that $\pi^{-1}(x)$ is a vector space and such that for all $x \in X$, there exists an open neighborhood $U \ni x$ and homeomorphisms $h: \pi^{-1}(U) \rightarrow U \times \mathbb{F}^n$
-such that $h|_{\pi^{-1}(x')}$ is a linear isomorphism for all $x' \in U$._
+!!!
+    __Definition__ 
+    _A vector bundle $\xi = (E, X, \pi)$ is a triple consisting of topological spaces $E$ and $X$ together with a continuous map $\pi: E \rightarrow X$ such that $\pi^{-1}(x)$ is a vector space and such that for all $x \in X$, there exists an open neighborhood $U \ni x$ and homeomorphisms $h: \pi^{-1}(U) \rightarrow U \times \mathbb{F}^n$
+    such that $h|_{\pi^{-1}(x')}$ is a linear isomorphism for all $x' \in U$._
 
 $E$ is typically refered to as the total space, while $X$ is called the base space. When it is understood, often we refer to the vector bundle via its total space i.e. $E$ instead of $\xi$.
 
@@ -482,27 +483,28 @@ $E$ is typically refered to as the total space, while $X$ is called the base spa
 
 
 
+!!!
+    __Definition__ Two vector bundles $E$ and $E'$ over $B$ are said to be equivalent if there exists a homeomorphism $E \rightarrow E'$ which restricts to a linear isomorphism on each fiber.
 
-__Definition__ Two vector bundles $E$ and $E'$ over $B$ are said to be equivalent if there exists a homeomorphism $E \rightarrow E'$ which restricts to a linear isomorphism on each fiber.
 
-
-
-__Definition__ _A section of a vector bundle $E \rightarrow B$ is a map $\sigma: B \rightarrow E$ such thata $\pi \circ \sigma = 1_B$. $\Gamma(E)$ refers to the sapce of 
+!!!
+    __Definition__ _A section of a vector bundle $E \rightarrow B$ is a map $\sigma: B \rightarrow E$ such thata $\pi \circ \sigma = 1_B$. $\Gamma(E)$ refers to the sapce of 
 sections of $E$._
 
 If $E = B \times V$ is the trivial bundle, then a section is merely a continuous map from $B$ to $V$. Similarly, if $ f : B \rightarrow V$ is 
 continuous, then we can construct a section $\sigma : B \rightarrow E$ defined by $f \mapsto (-, f(-))$. From this point of view a section is a generalization of the 
 space $C(B, V)$. 
 
-__Theorem__ If $Y \subset B$ is closed and $B$ is paracompact (admits partitions of unity) then for a vector bundle $E$ over $B$, the restriction map $\Gamma(E) \rightarrow \Gamma(E|_Y)$ is surjective. 
+!!!
+    __Theorem__ If $Y \subset B$ is closed and $B$ is paracompact (admits partitions of unity) then for a vector bundle $E$ over $B$, the restriction map $\Gamma(E) \rightarrow \Gamma(E|_Y)$ is surjective. 
 
 
 The space $\Gamma(E)$ is also easily seen to be a vector space with operations $(\sigma + \tau) (x) = (x, \sigma(x) + \tau(x))$. It is then 
 easy to verify that the space of sections is contractible. 
 
 
-
-__Theorem__ _A rank n vector bundle $E$ admits n linearly independent sections if and only if $E$ is isomorphic to the trivial rank n bundle._
+!!!
+    __Theorem__ _A rank n vector bundle $E$ admits n linearly independent sections if and only if $E$ is isomorphic to the trivial rank n bundle._
 
 This gives us a second proof that the Mobius bundle is nontrivial, for any section must have positive and negative vectors and then the intermediate value theorem 
 implies that there must be a point where the section is zero.
@@ -516,10 +518,10 @@ Construcing Vector Bundles
 -------------------------------------------------------------------------------
 
 
-
-__Definition__ Let $f: X \rightarrow Y$ be continuous and let $E \overset{\pi}{\rightarrow} Y$ be a vector bundle, then 
-define the pullback bundle $E_f \overset{\pi_f}{\rightarrow} X$ to be the subspace of $X \times E$ where $(x, v) \in E_f$ 
-if $f(x) = \pi(v)$. 
+!!!
+    __Definition__ Let $f: X \rightarrow Y$ be continuous and let $E \overset{\pi}{\rightarrow} Y$ be a vector bundle, then 
+    define the pullback bundle $E_f \overset{\pi_f}{\rightarrow} X$ to be the subspace of $X \times E$ where $(x, v) \in E_f$ 
+    if $f(x) = \pi(v)$. 
 
 _Proof that $E_f$ is a well defined vector bundle_ 
 
@@ -656,13 +658,14 @@ then $w(E) w(F) = 1$ so we can solve for $w(F)$ in terms of $w(E)$ by $w(F) = \o
 
 This yields an obstruction for a manifold embedding into $\mathbb{R}^N$.
 
-
-__Definition__ (Normal Bundle) Let $M^k \hookrightarrow N^n$ be a smooth immersion, then $\nu(M)$ is the pullback of the subbundle of $TN^n|_{f(M)}$ consisting
-of vectors $(f(x), v)$ with $v \cdot w = 0$ for all $w \in f_* TM$.
+!!!
+    __Definition__ (Normal Bundle) Let $M^k \hookrightarrow N^n$ be a smooth immersion, then $\nu(M)$ is the pullback of the subbundle of $TN^n|_{f(M)}$ consisting
+    of vectors $(f(x), v)$ with $v \cdot w = 0$ for all $w \in f_* TM$.
 
 The normal bundle is well defined for smooth immersions by the injectivity of $f_*$ on $TM$. 
 
-__Proposition__ Let $M^k \overset{f}{\hookrightarrow} \mathbb{R}^n$ be a smooth embedding, then $TM \oplus \nu(M) = \varepsilon^n$ is trivial. 
+!!! 
+    __Proposition__ Let $M^k \overset{f}{\hookrightarrow} \mathbb{R}^n$ be a smooth embedding, then $TM \oplus \nu(M) = \varepsilon^n$ is trivial. 
 
 _Proof_ Notice that $f_* TM \subset T\mathbb{R}^n|_{f(M)}$ and that its complement is the normal bundle $\nu(M)$ so that $TM \oplus \nu(M) = f^*( T\mathbb{R}^n|_{f(M)})$. $\square$ 
 
@@ -673,8 +676,8 @@ Now if $\overline{w(M)} = 1 + \dots + a^k$, then $M^n \hookrightarrow \mathbb{R}
 As an example, recall that $w(\mathbb{RP}^4) = 1 + a + a^4$. It is not hard to determine that $1 + a + a^2 + a^3$ is the inverse so $\mathbb{RP}^4 \not\hookrightarrow \mathbb{R}^6$. 
 
 
-
-__Theorem__ The homomorphism $h : H^n(B;\mathbb{Z}) \rightarrow H^n(B;\mathbb{Z}_2)$ maps the Euler class of $\xi$ onto the top Stiefel-Whitney class $w_n(\xi)$. 
+!!!
+    __Theorem__ The homomorphism $h : H^n(B;\mathbb{Z}) \rightarrow H^n(B;\mathbb{Z}_2)$ maps the Euler class of $\xi$ onto the top Stiefel-Whitney class $w_n(\xi)$. 
 
 _Proof_ Observe the following diagram, 
 $$
@@ -690,8 +693,9 @@ Complex Vector Bundles
 
 Complex vector bundles have some further peculiarities which make them stand out from the real case. 
 
-__Theorem (Splitting Principle)__ Let $E \rightarrow B$ be a complex vector bundle with B paracompact, then there exists a space $A$ and a continuous map $f : A \rightarrow B$ such 
-that $f^*(E) = L_1 \oplus L_2 \oplus \dots \oplus L_n$ splits along line bundles and furthermore that the map $f^* : H^*(B) \rightarrow H^*(A)$ is injective.  
+!!! 
+    __Theorem (Splitting Principle)__ Let $E \rightarrow B$ be a complex vector bundle with B paracompact, then there exists a space $A$ and a continuous map $f : A \rightarrow B$ such 
+    that $f^*(E) = L_1 \oplus L_2 \oplus \dots \oplus L_n$ splits along line bundles and furthermore that the map $f^* : H^*(B) \rightarrow H^*(A)$ is injective.  
 
 _Proof_ Let $\mathbb{P}(E) = \{ \ell \in F_b \subset E \}$ be the projectivization of E i.e. the fiber bundle over B where the fiber consists of the space of lines of the fiber of E. 
 
