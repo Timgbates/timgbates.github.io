@@ -492,7 +492,7 @@ $E$ is typically refered to as the total space, while $X$ is called the base spa
     __Definition__ _A section of a vector bundle $E \rightarrow B$ is a map $\sigma: B \rightarrow E$ such thata $\pi \circ \sigma = 1_B$. $\Gamma(E)$ refers to the sapce of 
     sections of $E$. _
  
-If $E = B \times V$ is the trivial bundle, then a section is merely a continuous map from $B$ to $V$. Similarly, if $ f : B \rightarrow V$ is 
+If $E = B \times V$ is the trivial bundle, then a section is merely a continuous map from $B$ to $V$. Similarly, if $f : B \rightarrow V$ is 
 continuous, then we can construct a section $\sigma : B \rightarrow E$ defined by $f \mapsto (-, f(-))$. From this point of view a section is a generalization of the 
 space $C(B, V)$. 
 
@@ -541,6 +541,7 @@ All of our favorite ways to build vector spaces also let us build vector bundles
 - $E \oplus F$ is the vector bundle whose fibers are direct sums $E_x \oplus F_x$. 
 - $E \otimes F$ is the vector bundle whose fibers are tensor products $E_x \otimes F_x$. 
 - $Hom(E, F)$ is the vector bundle whose fibers are the vector spaces of linear maps from $E_x$ to $F_x$.
+- $\Lambda^k(E)$ is the vector bundle whose fibers consist of alternating k-forms over $F_x$. 
 
 If $F$ is the trivial one dimensional bundle over $X$, then $Hom(E, \varepsilon^1)$ is called the dual bundle of $E$.  
 Notice that if $E$ can be equipped with a metric, then we can find an isomorphism from $E^*$ to $E$. 
@@ -554,15 +555,16 @@ This map is continuous and an isomorphism on each fiber, thus we obtain a vector
 Notice that if the base space $B$ is paracompact, then we can find a partition of unity which allows us to construct a Euclidean metric on any vector bundle covering $B$. 
 In particular we see that if $B$ is a manifold, then any vector bundle is isomorphic to its dual. 
 
-__Theorem__ Let $E$ and $F$ be vector bundles over $X$, then there is a bundle isomorphism $E^* \otimes F \cong Hom(E, F)$.
+!!!
+    __Theorem__ Let $E$ and $F$ be vector bundles over $X$, then there is a bundle isomorphism $E^* \otimes F \cong Hom(E, F)$.
 
 _Proof_ Let $V$ and $W$ be finite dimensional vector spaces. Recall that there is a vector space isomorphism $\varphi: V^* \otimes W \rightarrow Hom(V,W)$ defined by
 $v^* \otimes w (\cdot) \mapsto v^*(\cdot) w$. It remains to show that we can find a continuous map of vector bundles such that the restriction to 
 the fibers recovers this isomorphism. 
 
-
-__Theorem__ _Let $E$ be a vector bundle over $B \times [0,1]$ with $B$ compact, then the bundle $E|_0 = \{ ((b, 0), v) \in E\}$ and $E|_1 = \{ ((b,1), v) \in E\}$ are 
-isomorphic as vector bundles._
+!!!
+    __Theorem__ _Let $E$ be a vector bundle over $B \times [0,1]$ with $B$ compact, then the bundle $E|_0 = \{ ((b, 0), v) \in E\}$ and $E|_1 = \{ ((b,1), v) \in E\}$ are 
+    isomorphic as vector bundles._
 
 
 __Corollary__ _Let $f_0, f_1 : X \rightarrow Y$ be homotopic, and let $E \rightarrow Y$ be a vector bundle, then $f_0^*(E) \cong f_1^*(E)$._ 
@@ -586,11 +588,11 @@ Thom Isomorphism Theorem and the Euler Class
 -------------------------------------------------------------------------------
 
 
-
-__Theorem__ Let $(E, B, \pi)$ be an oriented real rank n vector bundle, then there exists a class $u \in H^n(E, E_0 ; \mathbb{Z})$ called the
-Thom class such that 
-the restriction of $u$ to any fiber maps $u$ to the orientation class $u|_F \in H(F, F_0;\mathbb{Z})$. Moreover, the map $\Phi : H^k(B)\rightarrow H^{k+n}(E,E_0)$
- defined by $\alpha \mapsto \pi^*(\alpha) \smile u$ is an isomorphism. 
+!!!
+    __Theorem__ Let $(E, B, \pi)$ be an oriented real rank n vector bundle, then there exists a class $u \in H^n(E, E_0 ; \mathbb{Z})$ called the
+    Thom class such that 
+    the restriction of $u$ to any fiber maps $u$ to the orientation class $u|_F \in H(F, F_0;\mathbb{Z})$. Moreover, the map $\Phi : H^k(B)\rightarrow H^{k+n}(E,E_0)$
+    defined by $\alpha \mapsto \pi^*(\alpha) \smile u$ is an isomorphism. 
 
 
 
@@ -598,18 +600,19 @@ the restriction of $u$ to any fiber maps $u$ to the orientation class $u|_F \in 
 Our first application will be the construction of the Gysin sequence of an oriented real vector bundle. First, there is a restriction map 
 on cohomology induced by the inclusion $(E, \emptyset) \rightarrow (E, E_0)$. There is also the natural isomorphism $\pi^* : H^*(B) \rightarrow H^*(B)$. 
 
-__Definition__ The Euler class $e(\xi)$ of an oriented real vector bundle is defined as the image of the restriction $u|_E$ of the Thom class 
-by $\pi^{-1*}$ . 
+!!!
+    __Definition__ The Euler class $e(\xi)$ of an oriented real vector bundle is defined as the image of the restriction $u|_E$ of the Thom class 
+    by $\pi^{-1*}$ . 
 
 
-
-__Theorem__ There exists a long exact sequence 
-$$
-\begin{CD}
-\longrightarrow H^j(B) @>{\smile e(\xi) }>> H^{j+n}(B) @>{\pi^*_0}>> H^{j+n}(E_0) @>{}>> H^{j+1}(B) \longrightarrow 
-\end{CD}
-$$
-called the Gysin sequence. 
+!!!
+    __Theorem__ There exists a long exact sequence 
+    $$
+    \begin{CD}
+    \longrightarrow H^j(B) @>{\smile e(\xi) }>> H^{j+n}(B) @>{\pi^*_0}>> H^{j+n}(E_0) @>{}>> H^{j+1}(B) \longrightarrow 
+    \end{CD}
+    $$  
+    called the Gysin sequence. 
 
 
 
