@@ -517,6 +517,10 @@ This gives us a second proof that the Mobius bundle is nontrivial, for any secti
 implies that there must be a point where the section is zero.
 
 
+
+Example: Recall from differential topology that the k-fold tensor product of the cotangent bundle is a smooth vector bundle over M, 
+and the sub-bundle of alternating k-tensors forms a vector bundle, a section of which is a k-differential form. 
+
 Construcing Vector Bundles
 -------------------------------------------------------------------------------
 
@@ -680,7 +684,14 @@ As an example, recall that $w(\mathbb{RP}^4) = 1 + a + a^4$. It is not hard to d
 
 __Theorem__ The homomorphism $h : H^n(B;\mathbb{Z}) \rightarrow H^n(B;\mathbb{Z}_2)$ maps the Euler class of $\xi$ onto the top Stiefel-Whitney class $w_n(\xi)$. 
 
-_Proof_
+_Proof_ Observe the following diagram, 
+$$
+\begin{CD} 
+H^n(E,E_0;\mathbb{Z}) @>>> @VV\PhiV H^n(E,E_0 ; \mathbb{Z}_2) @VV\PhiV\\
+H^n(B ; \mathbb{Z} ) &>>> H^n(B;\mathbb{Z}_2)
+
+\end{CD}
+$$
 
 Pontrjagin Classes
 -------------------------------------------------------------------------------
