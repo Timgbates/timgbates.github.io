@@ -769,7 +769,7 @@ vanish, but we know that $p_1(\mathbb{CP}^n) = 3a^2 \neq 0$ and hence not all Po
 
 
 
-Universal Spaces 
+Classifying Spaces 
 -------------------------------------------------------------------------------
 
 !!!
@@ -777,7 +777,20 @@ Universal Spaces
     there is a bijection $[X, Gr_n(\mathbb{R}^n)] \cong \textrm{Vect}^n(X)$ defined by $f \mapsto f^*(\gamma^n)$. 
 
 
+This serves as a model theorem for what we will study now in more generality.     
 
+!!! 
+    __Definition Let $G$ be a topological group. A principle G bundle is a fiber bundle $(P, X, \pi)$ equipped with a right G-action 
+    on each fiber that is free and transitive. 
+
+    
+These spaces are in some ways quite rigid. Any morphism of principle $G$ bundles (over the same base space) is an isomorphism of $G$-bundles. This tells us for example that if $P$ admits a section then it is trivial. 
+Indeed let $\sigma: B \rightarrow P$ be a section and then define $\psi: B \times G \rightarrow P$ by $(b, g) \mapsto (b, g\sigma(b))$. This map is clearly continuous and a bundle map and so an isomorphism.
+
+!!! 
+    __Definition__ Let $G$ be a topological group, and let $P \rightarrow X$ be a principle G bundle, then a classifying space BG is a 
+    topological space equipped with a principle-G bundle $EG \rightarrow BG$ such that for any (paracompact) space X, there is a bijection 
+    between principle G-bundles over X and homotopy classes of maps $[X, BG]$ where the bijection assigns an element $f \in [X, BG]$ to $f^*EG$. 
 
 
 
