@@ -723,14 +723,26 @@ and notice that the Thom isomorphism maps $ e(\xi) = u|_E$ to $u|_E \smile u = u
 
 
 !!!
-    __Theorem__ Let $E\rightarrow B$ be a real vector bundle. $E$ is orientable if and only if $w_1(E) = 0$. 
+    __Theorem__ Let $E\rightarrow B$ be a real vector bundle over a paracompact space. $E$ is orientable if and only if $w_1(E) = 0$. 
+
+_Proof_ First, let us notice that the set of 2-sheeted covering spaces of B is in bijection with elements in $H^1(B; \mathbb{Z}_2)$. 
+This follows from the fact that 2-sheeted covering maps correspond via the galois corresondance to index 2 subgroups of $\pi_1(B)$ i.e. 
+to homomorphisms $[\pi_1(B), \mathbb{Z}_2] = [H_1(B), \mathbb{Z}_2]$ since $H_1(B)$ is the Abelianization of the fundamental group. Hence, 
+$Cov_2(B) \cong H^1(B ; \mathbb{Z}_2)$ and the claim is proved. Now let $P_{O}(E)$ be the principle $O(n)$ bundle (via assigning some Riemannian metric)
+then we can quotient $P_O(E)$ be the action of $SO(n)$ to obtain a 2-sheeted covering space of B. Now let us assign to this two sheeted covering space the corresponding
+class in $H^1(B;\mathbb{Z}_2)$. I claim that this is $w_1(E)$. One needs to only check that it is natural and that this yields the 
+correct class in the classifying space, and the rest follows from uniqueness of Stiefel-Whitney class. $\square$ 
 
 
 !!! 
-  __Thereom__ Let $E \rightarrow B$ be an oriented real vector bundle, then $E$ admits a spin structure if and only if $w_2(E) = 0$. 
-  Moreover, in the case that $w_2(E) = 0$, then there is a one to one correspondance between spin structures and $H^1(B; \mathbb{Z}_2)$. 
+    __Thereom__ Let $E \rightarrow B$ be an oriented real vector bundle, then $E$ admits a spin structure if and only if $w_2(E) = 0$. 
+    Moreover, in the case that $w_2(E) = 0$, then there is a one to one correspondance between spin structures and $H^1(B; \mathbb{Z}_2)$. 
 
 __Corollary__ $\mathbb{CP}^2$ is not spin. 
+
+
+
+
 
 Complex Vector Bundles
 -------------------------------------------------------------------------------
