@@ -650,6 +650,13 @@ on cohomology induced by the inclusion $(E, \emptyset) \rightarrow (E, E_0)$. Th
     $$  
     called the Gysin sequence. 
 
+_Proof_ This sequences is really the long exact sequence on the pair $(E,E_0)$ in disguise. This sequences appears as 
+$$
+\longrightarrow H^j(E,E_0) \longrightarrow H^j(E) \longrightarrow H^j(E_0) \longrightarrow H^{j+1}(E,E_0) \longrightarrow
+$$
+but recall the Thom isomorphism which yields $H^j(B) \cong H^{j+n}(E,E_0)$ by $\smile u$ with $u$ the Thom class. Replacing this part of the LES
+yields $\longrightarrow H^{j-n}(B) \overset{\smile e(\xi)}{\longrightarrow} H^{j}(E)$. Since $E \simeq B$ via inclusion we see that $H^j(E)$ can be 
+replaced with $H^j(B)$ and that the last map can be replaced with $\pi^*_0$. $\square$ 
 
 
 Stiefel-Whitney Classes
@@ -739,6 +746,11 @@ $Cov_2(B) \cong H^1(B ; \mathbb{Z}_2)$ and the claim is proved. Now let $P_{O}(E
 then we can quotient $P_O(E)$ be the action of $SO(n)$ to obtain a 2-sheeted covering space of B. Now let us assign to this two sheeted covering space the corresponding
 class in $H^1(B;\mathbb{Z}_2)$. I claim that this is $w_1(E)$. One needs to only check that it is natural and that this yields the 
 correct class in the classifying space, and the rest follows from uniqueness of Stiefel-Whitney class. $\square$ 
+
+
+__Corollary__ $\mathbb{RP}^n$ is orientable if and only if $n$ is odd. 
+
+_Proof_ Recall that $w(T\mathbb{RP}^n) = (1+a)^{n+1}$ so $w_1 = {n+1 \choose 1} = n+1$ which is even if and only if n is odd. $\square$ 
 
 
 !!! 
