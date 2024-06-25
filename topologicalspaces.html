@@ -70,6 +70,19 @@ for me when I need to remember where to find things.
 Homological Algebra and Misc. Algebraic Topology
 =============================================================================== 
 
+Category Theory
+-------------------------------------------------------------------------------
+
+!!! 
+    _Definition_ A concrete category is a category $\mathcal{C}$ together with a faithful functor $U : \mathcal{C} \rightarrow SET$. 
+    A category for which such a functor exists is called concretizable. 
+
+Concrete categories can then be interpreted as sets with additional structure. Examples include TOP, Ab, RMOD, etc. together with the forgetful functor. 
+
+
+
+
+
 
 
 
@@ -812,7 +825,7 @@ Fiber Bundles
     defined by $\sum_{i,j} b_i \otimes \iota^*(c_j) \mapsto \sum_{i,j} \pi^*(b_i) \otimes c_j$ is an R-module isomorphism. 
 
 
-This makes computing the cohomology ring of some spaces straightforward. For example, there is a fibration $S^1 \hookrightarrwo S^{\infty}/\mathbb{Z}_p \rightarrow \mathbb{CP}^{\infty}$ 
+This makes computing the cohomology ring of some spaces straightforward. For example, there is a fibration $S^1 \hookrightarrow S^{\infty}/\mathbb{Z}_p \rightarrow \mathbb{CP}^{\infty}$ 
 where of course $S^{\infty}/\mathbb{Z}_p = K(Z_p, 1)$. We can then use Leray-Hirsch to say the additive group structure of $H^*(K(Z_p, 1), \mathbb{Z}_p) = \Lambda(\alpha) \otimes \mathbb{Z}_p[\beta]$ 
 with $|\alpha|  = 1$ and $|\beta| = 2$. Of course one has to verify that the conditions for Leray-Hirsch are met. 
 
