@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+<meta charset="utf-8" emacsmode="-*- markdown -*-"><link rel="stylesheet" href="https://casual-effects.com/markdeep/latest/slate.css?">
+
+
+Some lesser known facts about R
+================================================================================================================
+
+
+When many of us learn measure theory for the first time there are a couple of standard theorems that we learan, monotone convergence theorem, Fatou's lemma, the translation invariance of Lebesgue measure.
+We also probably learn how to construct nonmeasurable sets using choice. We learn about sets which are nowhere dense yet have positive measure and sets which are dense and have measure zero. 
+
+Here's a stranger example: Let us consider $\mathbb{Q} \cap [0,1]$. This set is countable and let $\{q_i\}_{i \in \mathbb{N}}$ be an enumeration. Fix some $\varepsilon > 0$.
+Then let us define the set $E = \left(\bigcup_{i = 1}^{\infty} (q_i - \varepsilon 2^{i+1}, q_i + \varepsilon 2^{i+1}) \right) \cap [0,1]$. Notice that this set is open and dense inside $[0,1]$
+ however 
+ $$
+ \lambda(E) = \sum_{i = 1}^{\infty} \varepsilon 2^i = \varepsilon 
+ $$
+ can be arbitrarily small. Additionally the set $F = [0,1] \backslash E$ is a closed (and bounded hence compact) nowhere dense subset of $[0,1]$ with measure $1 - \varepsilon$. 
+ 
+
+
+
+
+<!-- Markdeep: --><style class="fallback">body{visibility:hidden;white-space:pre;font-family:monospace}</style><script src="markdeep.min.js" charset="utf-8"></script><script src="https://morgan3d.github.io/markdeep/latest/markdeep.min.js?" charset="utf-8"></script><script>window.alreadyProcessedMarkdeep||(document.body.style.visibility="visible")</script>
+
+
+</html>
