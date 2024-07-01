@@ -2,22 +2,21 @@
 <html>
 <meta charset="utf-8" emacsmode="-*- markdown -*-"><link rel="stylesheet" href="https://casual-effects.com/markdeep/latest/slate.css?">
 
+A blog about random results in math. 
 
-Some lesser known facts about R
+
+Equidistribution Theorem
 ================================================================================================================
 
 
-When many of us learn measure theory for the first time there are a couple of standard theorems that we learan, monotone convergence theorem, Fatou's lemma, the translation invariance of Lebesgue measure.
-We also probably learn how to construct nonmeasurable sets using choice. We learn about sets which are nowhere dense yet have positive measure and sets which are dense and have measure zero. 
+In this post we discuss the following Theorem
 
-Here's a stranger example: Let us consider $\mathbb{Q} \cap [0,1]$. This set is countable and let $\{q_i\}_{i \in \mathbb{N}}$ be an enumeration. Fix some $\varepsilon > 0$.
-Then let us define the set $E = \left(\bigcup_{i = 1}^{\infty} (q_i - \varepsilon 2^{i+1}, q_i + \varepsilon 2^{i+1}) \right) \cap [0,1]$. Notice that this set is open and dense inside $[0,1]$
- however 
- $$
- \lambda(E) = \sum_{i = 1}^{\infty} \varepsilon 2^i = \varepsilon 
- $$
- can be arbitrarily small. Additionally the set $F = [0,1] \backslash E$ is a closed (and bounded hence compact) nowhere dense subset of $[0,1]$ with measure $1 - \varepsilon$. 
- 
+!!! 
+        _Theorem_ Let $\alpha \in [0,1]$ be irrational, then the set $\{n \alpha \pmod 1 \}_{n \in \mathbb{N}}$ is uniformlly distributed in $[0,1]$. 
+
+
+
+
 
 
 
